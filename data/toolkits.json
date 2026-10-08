@@ -1,0 +1,92 @@
+{
+  "ip_patent": {
+    "title_zh": "专利检索与确认",
+    "title_en": "Patent Search & Verification",
+    "intro_zh": "选品和上架前，先确认产品的结构、功能或外观是否涉及他人专利。以下为常用的官方或权威检索入口，建议保留检索结果截图。",
+    "intro_en": "Before selecting or listing a product, check whether its structure, function or design is covered by someone else's patent. Use the official or authoritative search tools below and keep a record of your search.",
+    "items": [
+      { "zh": "Google 专利：可检索全球专利及同族，适合初步排查（海外站点，部分网络可能需要代理）", "en": "Google Patents: search worldwide patents and their families for an initial check (overseas site; may require a proxy on some networks)", "url": "https://patents.google.com" },
+      { "zh": "中国国家知识产权局专利检索及分析系统：查询中国专利的法律状态", "en": "CNIPA patent search & analysis system: check the legal status of Chinese patents", "url": "https://pss-system.cponline.cnipa.gov.cn/conventionalSearch" },
+      { "zh": "美国专利商标局 Patent Public Search：查询美国专利", "en": "USPTO Patent Public Search: search US patents", "url": "https://ppubs.uspto.gov/pubwebapp/" },
+      { "zh": "Espacenet：检索欧洲及全球专利文献", "en": "Espacenet: search European and worldwide patent documents", "url": "https://worldwide.espacenet.com" }
+    ]
+  },
+  "ip_trademark": {
+    "title_zh": "商标检索与确认",
+    "title_en": "Trademark Search & Verification",
+    "intro_zh": "产品名称、Logo、包装上的文字或图形，需要先确认不与他人商标冲突。品牌备案前也建议完成检索。",
+    "intro_en": "Check product names, logos and any wording or graphics on packaging against existing trademarks before use, including before applying for brand registry.",
+    "items": [
+      { "zh": "中国商标网：查询中国注册商标", "en": "China Trademark Network: search registered Chinese trademarks", "url": "https://sbj.cnipa.gov.cn" },
+      { "zh": "美国商标检索系统：查询美国商标", "en": "USPTO trademark search: search US trademarks", "url": "https://tmsearch.uspto.gov" },
+      { "zh": "TMview：检索欧盟及多国商标（海外站点，部分网络可能需要代理）", "en": "TMview: search EU and many national trademarks (overseas site; may require a proxy on some networks)", "url": "https://www.tmdn.org/tmview" },
+      { "zh": "WIPO 全球品牌数据库：查询国际注册", "en": "WIPO Global Brand Database: search international registrations", "url": "https://branddb.wipo.int" }
+    ]
+  },
+  "ip_brand": {
+    "title_zh": "品牌备案与知识产权保护",
+    "title_en": "Brand Registry & IP Protection",
+    "intro_zh": "持有有效商标后，可通过平台品牌备案获得知识产权保护工具。尚未取得商标时，可了解平台对接的知识产权服务。",
+    "intro_en": "With a valid trademark you can enrol in brand registry for intellectual-property protection tools. If you do not yet have a trademark, you can review the platform's connected IP services.",
+    "items": [
+      { "zh": "亚马逊品牌注册：提交商标信息完成备案", "en": "Amazon Brand Registry: enrol with your trademark information", "url": "https://brandservices.amazon.com" },
+      { "zh": "亚马逊知识产权加速器：了解商标申请与对接服务", "en": "Amazon IP Accelerator: learn about trademark filing and connected services", "url": "https://brandservices.amazon.com/ipaccelerator" }
+    ]
+  },
+  "hazmat": {
+    "title_zh": "危险品与受限品类自查",
+    "title_en": "Dangerous Goods & Restricted Products",
+    "intro_zh": "含电池、液体、粉末、强磁、压缩气体等商品，可能需要提交安全信息或审核。请在卖家后台搜索“危险品”或“受限商品”查看最新要求。",
+    "intro_en": "Products containing batteries, liquids, powders, strong magnets or compressed gases may require safety information or review. Search “dangerous goods” or “restricted products” in Seller Central for the latest requirements.",
+    "items": [
+      { "zh": "亚马逊卖家平台帮助：搜索危险品审核与受限商品政策", "en": "Amazon Seller Central Help: search dangerous-goods review and restricted-products policies", "url": "https://sellercentral.amazon.com/help" },
+      { "zh": "中国应急管理部：了解危险化学品相关管理要求", "en": "China Ministry of Emergency Management: review hazardous-chemical requirements", "url": "https://www.mem.gov.cn" }
+    ]
+  },
+  "sourcing1688": {
+    "title_zh": "1688 寻源与打样",
+    "title_en": "Sourcing & Sampling on 1688",
+    "intro_zh": "跨境与国内卖家常通过 1688 寻找工厂货源。建议按“检索比价、索样验证、评估供应商、小批量试单、确认合作”的顺序推进。",
+    "intro_en": "Sellers often find factory supply on 1688. Follow the sequence: search and compare, request samples, evaluate suppliers, place a small trial order, then confirm the partnership.",
+    "items": [
+      { "zh": "1688：按关键词或图片搜索货源，查看工厂资质与成交记录", "en": "1688: search by keyword or image, and review factory credentials and sales history", "url": "https://www.1688.com" },
+      { "zh": "1688 搜索：对比同款不同供应商的价格、起订量与交期", "en": "1688 search: compare price, MOQ and lead time across suppliers", "url": "https://s.1688.com" }
+    ]
+  },
+  "affiliate": {
+    "title_zh": "达人带货与联盟营销",
+    "title_en": "Creator & Affiliate Marketing",
+    "intro_zh": "通过达人或联盟创作者推广商品，是常见的增长方式。可在卖家后台开通联盟或达人计划，设置佣金并联系创作者。",
+    "intro_en": "Promoting products through creators or affiliates is a common growth channel. Enable the affiliate or creator plan in Seller Central, set commission and contact creators.",
+    "items": [
+      { "zh": "TikTok 创作者市场：查找并联系合适的创作者（海外站点，部分网络可能需要代理）", "en": "TikTok Creator Marketplace: find and contact suitable creators (overseas site; may require a proxy on some networks)", "url": "https://creatormarketplace.tiktok.com" },
+      { "zh": "TikTok Shop 卖家中心：在联盟营销中设置计划与佣金", "en": "TikTok Shop Seller Center: set plans and commission under affiliate marketing", "url": "https://seller.tiktokglobalshop.com" },
+      { "zh": "亚马逊 Influencer 计划：了解创作者带货方式", "en": "Amazon Influencer Program: learn how creators recommend products", "url": "https://affiliate-program.amazon.com/influencers" },
+      { "zh": "Shopee：在卖家中心了解联盟与达人相关功能", "en": "Shopee: review affiliate and creator features in Seller Centre", "url": "https://shopee.cn" }
+    ]
+  },
+  "reimbursement": {
+    "title_zh": "平台赔偿与对账自查",
+    "title_en": "Reimbursement & Reconciliation",
+    "intro_zh": "对入仓后丢失、残损的库存，平台可能提供赔偿。建议定期查看库存调整、赔偿报告与库存账本，并与实际入库、出库记录核对。",
+    "intro_en": "The platform may reimburse inventory lost or damaged after it reaches the warehouse. Review inventory adjustments, reimbursement reports and the inventory ledger regularly, and compare them with your inbound and outbound records.",
+    "items": [
+      { "zh": "亚马逊报告中心：查看库存调整、赔偿与库存账本报告", "en": "Amazon Report Central: review inventory adjustments, reimbursements and the inventory ledger", "url": "https://sellercentral.amazon.com/reportcentral" },
+      { "zh": "操作路径：卖家后台 → 报告 → 亚马逊物流 → 库存调整 / 赔偿", "en": "Menu path: Seller Central → Reports → Fulfillment → Inventory Adjustments / Reimbursements", "url": "https://sellercentral.amazon.com/reportcentral" }
+    ]
+  },
+  "tax_refs": {
+    "title_zh": "税费、编码与官方查询入口",
+    "title_en": "Tax, Tariff Codes & Official Tools",
+    "intro_zh": "跨境商品涉及商品编码、关税与目的地增值税。税率因商品和目的地而异，请通过以下官方入口查询，避免使用未经核实的数字。",
+    "intro_en": "Cross-border goods involve commodity codes, duties and destination VAT. Rates vary by product and destination; use the official tools below rather than unverified figures.",
+    "items": [
+      { "zh": "中国海关总署：了解通关与税收政策", "en": "General Administration of Customs of China: review customs and tax policies", "url": "https://www.customs.gov.cn" },
+      { "zh": "中国国际贸易单一窗口：查询商品编码等通关信息", "en": "China International Trade Single Window: look up commodity codes and customs information", "url": "https://www.singlewindow.cn" },
+      { "zh": "欧盟增值税一站式服务（OSS/IOSS）：了解增值税与电商规则", "en": "EU VAT One Stop Shop (OSS/IOSS): review VAT and e-commerce rules", "url": "https://vat-one-stop-shop.ec.europa.eu/index_en" },
+      { "zh": "英国政府：了解商品进口英国的通关与增值税规则", "en": "UK Government: review customs and VAT rules for importing goods into the UK", "url": "https://www.gov.uk/import-goods-into-uk" },
+      { "zh": "美国海关与边境保护局：了解小额包裹与申报要求", "en": "U.S. CBP: review small-parcel and declaration requirements", "url": "https://www.cbp.gov/trade/basic-import-export/e-commerce" },
+      { "zh": "Keepa 数据服务：了解商品数据订阅与密钥获取", "en": "Keepa: review product-data subscription and how to obtain a key", "url": "https://keepa.com/#!api" }
+    ]
+  }
+}

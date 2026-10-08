@@ -1,0 +1,31 @@
+{
+  "code": 10000,
+  "msg": "success",
+  "sub_code": "",
+  "sub_msg": "",
+  "data": {
+    "total": 2,
+    "data": [
+      {
+        "product_id": "700000000001",
+        "name": "无线蓝牙耳机 Pro",
+        "price": 125,
+        "stock": 35,
+        "img": "https://p3-douyin.douyinpic.com/earbuds-main.jpg",
+        "update_time": "2026-10-01 10:00:00",
+        "sku_list": [
+          { "sku_id": "900001", "out_sku_id": "EARBUD-W", "price": 125, "stock": 25, "sku_spec": "颜色:白色" },
+          { "sku_id": "900002", "out_sku_id": "EARBUD-B", "price": 125, "stock": 10, "sku_spec": "颜色:黑色" }
+        ]
+      },
+      {
+        "product_id": "700000000002",
+        "name": "简约手机壳",
+        "price": 19.9,
+        "stock": 100,
+        "img": "https://p3-douyin.douyinpic.com/case-black.jpg",
+        "update_time": "2026-09-28 09:00:00"
+      }
+    ]
+  }
+}

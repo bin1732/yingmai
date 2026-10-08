@@ -1,0 +1,39 @@
+{
+  "code": 0,
+  "message": "Success",
+  "data": {
+    "order": {
+      "order_id": "567812345678901234",
+      "order_status": "AWAITING_SHIPMENT",
+      "create_time": 1760000000,
+      "update_time": 1760000100,
+      "buyer_email": "buyer.john@example.com",
+      "recipient_address": {
+        "name": "John Buyer",
+        "phone_number": "+12135550100",
+        "region_code": "US",
+        "province_code": "CA",
+        "city": "Los Angeles",
+        "postal_code": "90001",
+        "address_line1": "1850 Airport Exchange Blvd"
+      },
+      "line_items": [
+        {
+          "item_id": "LI-1001",
+          "product_name": "Cotton T-Shirt",
+          "sku_id": "1729388324987897824",
+          "seller_sku": "TSHIRT-M-RED",
+          "quantity": 2,
+          "sale_price": { "amount": "12.50", "currency": "USD" }
+        }
+      ],
+      "payment": {
+        "currency": "USD",
+        "shipping_fee": { "amount": "5.00", "currency": "USD" },
+        "tax": { "amount": "2.10", "currency": "USD" },
+        "discount": { "amount": "0.00", "currency": "USD" },
+        "total_amount": { "amount": "32.10", "currency": "USD" }
+      }
+    }
+  }
+}

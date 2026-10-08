@@ -1,0 +1,48 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: 语法校验 / 数据校验 / 领域测试
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 安装 Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: JavaScript 语法校验
+        run: |
+          set -e
+          fail=0
+          while IFS= read -r f; do
+            if ! node --check "$f"; then fail=1; fi
+          done < <(find src web -name '*.js' ! -name 'echarts.min.js')
+          if [ "$fail" -ne 0 ]; then exit 1; fi
+          echo 'JavaScript syntax OK'
+
+      - name: 数据文件 JSON 校验
+        run: |
+          node -e "
+          const fs=require('fs'),path=require('path');
+          let n=0;
+          for (const f of fs.readdirSync('data').filter(x=>x.endsWith('.json'))) {
+            JSON.parse(fs.readFileSync(path.join('data', f), 'utf8')); n++;
+          }
+          JSON.parse(fs.readFileSync('web/manifest.webmanifest','utf8'));
+          JSON.parse(fs.readFileSync('package.json','utf8'));
+          console.log('JSON OK, data files =', n);
+          "
+
+      - name: 领域测试（无需联网或模型）
+        run: node tests/domain.test.js

@@ -1,0 +1,27 @@
+{
+  "model_list": [
+    {
+      "item_id": 2500139862,
+      "model": [
+        {
+          "model_id": 90001,
+          "model_sku": "TSHIRT-M-RED",
+          "model_status": "NORMAL",
+          "price_info": { "current_price": 12.50, "original_price": 15.00, "currency": "SGD" },
+          "stock_info_v2": {
+            "summary_info": { "total_reserved_stock": 0, "total_available_stock": 10 }
+          }
+        },
+        {
+          "model_id": 90002,
+          "model_sku": "TSHIRT-L-BLUE",
+          "model_status": "NORMAL",
+          "price_info": { "current_price": 12.50, "original_price": 15.00, "currency": "SGD" },
+          "stock_info_v2": {
+            "summary_info": { "total_reserved_stock": 0, "total_available_stock": 20 }
+          }
+        }
+      ]
+    }
+  ]
+}

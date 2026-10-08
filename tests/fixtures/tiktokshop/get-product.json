@@ -1,0 +1,35 @@
+{
+  "code": 0,
+  "message": "Success",
+  "data": {
+    "product": {
+      "id": "1729432087292775345",
+      "title": "Cotton T-Shirt",
+      "status": "LIVE",
+      "update_time": 1760000000,
+      "images": [
+        { "uri": "tos-alisg-i-01/xxxx/tshirt-main.jpg", "width": 1000, "height": 1000 }
+      ],
+      "skus": [
+        {
+          "id": "1729388324987897824",
+          "seller_sku": "TSHIRT-M-RED",
+          "price": { "amount": "12.50", "currency": "USD" },
+          "sale_properties": [
+            { "property_name": "Color", "value_name": "Red" },
+            { "property_name": "Size", "value_name": "M" }
+          ]
+        },
+        {
+          "id": "1729388324987897825",
+          "seller_sku": "TSHIRT-L-BLUE",
+          "price": { "amount": "12.50", "currency": "USD" },
+          "sale_properties": [
+            { "property_name": "Color", "value_name": "Blue" },
+            { "property_name": "Size", "value_name": "L" }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "href": "https://api.ebay.com/sell/inventory/v1/offer?sku=EARBUD-01&limit=100&offset=0",
+  "total": 1,
+  "offers": [
+    {
+      "offerId": "1abc-0001",
+      "sku": "EARBUD-01",
+      "marketplaceId": "EBAY_US",
+      "format": "FIXED_PRICE",
+      "status": "PUBLISHED",
+      "price": { "value": "25.99", "currency": "USD" },
+      "listingId": "123456789012",
+      "availableQuantity": 25,
+      "categoryId": "15032"
+    }
+  ]
+}

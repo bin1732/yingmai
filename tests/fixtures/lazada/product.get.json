@@ -1,0 +1,32 @@
+{
+  "request_id": "abc123def456",
+  "Response": {
+    "Item": {
+      "ItemId": 2500139861,
+      "CategoryId": 1005,
+      "ItemName": "Wireless Earbuds Pro",
+      "Images": [
+        { "Image": "//sg-live-11.slatic.net/original/earbuds-main.jpg" }
+      ],
+      "Status": "active",
+      "Skus": [
+        {
+          "SkuId": 0,
+          "ItemId": 2500139861,
+          "Sku": "EARBUD-01",
+          "Price": 25.99,
+          "Quantity": 25,
+          "Status": "normal"
+        },
+        {
+          "SkuId": 90001,
+          "ItemId": 2500139861,
+          "Sku": "TSHIRT-M-RED",
+          "Price": 12.50,
+          "Quantity": 10,
+          "Status": "normal"
+        }
+      ]
+    }
+  }
+}

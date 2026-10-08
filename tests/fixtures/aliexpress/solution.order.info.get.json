@@ -1,0 +1,33 @@
+{
+  "aliexpress_solution_order_info_get_response": {
+    "result": {
+      "error_code": "0",
+      "error_message": "",
+      "data": {
+        "order_id": 1160045860056286,
+        "order_status": "WAIT_SELLER_SEND_GOODS",
+        "gmt_create": "2026-10-01 12:12:12",
+        "gmt_modified": "2026-10-01 13:00:00",
+        "buyer_info": {
+          "login_id": "buyer_john",
+          "first_name": "John",
+          "last_name": "Buyer",
+          "country": "US"
+        },
+        "receipt_address": {
+          "contact_person": "John Buyer",
+          "country": "US",
+          "province": "California",
+          "city": "Los Angeles",
+          "zip": "90001",
+          "detail_address": "1850 Airport Exchange Blvd",
+          "address": "1850 Airport Exchange Blvd",
+          "address2": "",
+          "mobile_no": "2135550100",
+          "phone_number": "2135550100",
+          "phone_country": "+1"
+        }
+      }
+    }
+  }
+}

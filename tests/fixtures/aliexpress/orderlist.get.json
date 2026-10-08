@@ -1,0 +1,71 @@
+{
+  "aliexpress_trade_seller_orderlist_get_response": {
+    "result": {
+      "current_page": 1,
+      "error_code": "0",
+      "error_message": "",
+      "page_size": 50,
+      "success": true,
+      "target_list": {
+        "aeop_order_item_dto": [
+          {
+            "order_id": 1160045860056286,
+            "order_status": "WAIT_SELLER_SEND_GOODS",
+            "buyer_login_id": "buyer_john",
+            "buyer_signer_fullname": "John Buyer",
+            "gmt_create": "2026-10-01 12:12:12",
+            "gmt_update": "2026-10-01 13:00:00",
+            "gmt_pay_time": "2026-10-01 12:20:00",
+            "pay_amount": { "amount": "51.99", "currency_code": "USD" },
+            "product_list": {
+              "aeop_order_product_dto": [
+                {
+                  "product_id": 2356980,
+                  "product_name": "Wireless Earbuds Pro",
+                  "product_count": 1,
+                  "sku_code": "EARBUD-01",
+                  "product_img_url": "http://g03.a.alicdn.com/kf/images/eng/no_photo.gif",
+                  "product_unit_price": { "amount": "25.99", "currency_code": "USD" },
+                  "logistics_amount": { "amount": "6.00", "currency_code": "USD" }
+                },
+                {
+                  "product_id": 2356981,
+                  "product_name": "Silicone Case",
+                  "product_count": 2,
+                  "sku_code": "CASE-01",
+                  "product_img_url": "",
+                  "product_unit_price": { "amount": "10.00", "currency_code": "USD" },
+                  "logistics_amount": { "amount": "0", "currency_code": "USD" }
+                }
+              ]
+            }
+          },
+          {
+            "order_id": 1160045860056299,
+            "order_status": "FINISH",
+            "buyer_login_id": "buyer_jane",
+            "buyer_signer_fullname": "Jane Buyer",
+            "gmt_create": "2026-09-20 10:00:00",
+            "gmt_update": "2026-09-25 10:00:00",
+            "pay_amount": { "amount": "29.50", "currency_code": "USD" },
+            "product_list": {
+              "aeop_order_product_dto": [
+                {
+                  "product_id": 32972979985,
+                  "product_name": "Man's Waistcoat Unit.",
+                  "product_count": 1,
+                  "sku_code": "VEST-M-RED",
+                  "product_img_url": "",
+                  "product_unit_price": { "amount": "29.50", "currency_code": "USD" },
+                  "logistics_amount": { "amount": "0", "currency_code": "USD" }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "total_count": 2,
+      "total_page": 1
+    }
+  }
+}

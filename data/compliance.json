@@ -1,0 +1,140 @@
+{
+  "pre_listing_checklist": {
+    "title": "上架前合规检查清单",
+    "items": [
+      {
+        "category": "资质",
+        "items": [
+          "营业执照已上传并审核通过",
+          "类目所需特殊资质已备齐（食品经营许可证/化妆品备案/3C认证等）",
+          "商标注册证或授权书（品牌商品必须）"
+        ],
+        "category_en": "Qualifications",
+        "items_en": [
+          "Business license uploaded and approved",
+          "Special category qualifications ready (food license / cosmetics filing / 3C, etc.)",
+          "Trademark certificate or authorization (required for branded goods)"
+        ]
+      },
+      {
+        "category": "商品信息",
+        "items": [
+          "标题不含违禁词（最/第一/国家级等极限词）",
+          "主图为实拍或授权图，不含水印/其他平台logo",
+          "描述与实物一致，不夸大功能",
+          "价格真实，不标虚高原价再打折",
+          "SKU属性填写完整"
+        ],
+        "category_en": "Product Information",
+        "items_en": [
+          "Title contains no prohibited words (e.g. best, No.1, national-level)",
+          "Main images are real or licensed, with no watermark or other platform logos",
+          "Description matches the product without exaggerating features",
+          "Prices are genuine (no inflated original price before a discount)",
+          "SKU attributes filled in completely"
+        ]
+      },
+      {
+        "category": "物流售后",
+        "items": [
+          "运费模板设置正确（偏远地区加价或不发货）",
+          "发货时效承诺明确（48小时/72小时）",
+          "退换货政策符合平台规定",
+          "破损/丢件赔付规则清晰"
+        ],
+        "category_en": "Shipping & After-Sales",
+        "items_en": [
+          "Shipping templates set correctly (surcharge or exclusion for remote regions)",
+          "Clear delivery-time promise (48h / 72h)",
+          "Return and refund policy follows platform rules",
+          "Clear compensation rules for damage or loss"
+        ]
+      },
+      {
+        "category": "跨境专项",
+        "items": [
+          "产品不含目标国禁售品类（锂电池需MSDS/UN38.3）",
+          "已确认目标国关税和VAT缴纳方式",
+          "产品标签符合当地语言要求",
+          "外观/专利不侵权",
+          "包装符合运输标准（易碎品标识）"
+        ],
+        "category_en": "Cross-border Specific",
+        "items_en": [
+          "Product is not prohibited in the target country (lithium batteries need MSDS/UN38.3)",
+          "Confirmed how duties and VAT are handled in the target country",
+          "Product labels meet local language requirements",
+          "No design or patent infringement",
+          "Packaging meets shipping standards (fragile markings)"
+        ]
+      }
+    ],
+    "title_en": "Pre-Listing Compliance Checklist"
+  },
+  "prohibited_items": {
+    "title": "常见禁售/限售品类",
+    "domestic": [
+      "药品/医疗器械（需资质）",
+      "烟草/电子烟",
+      "仿真武器/管制刀具",
+      "野生动物制品",
+      "色情/低俗内容",
+      "假冒品牌商品",
+      "金融/虚拟货币",
+      "彩票"
+    ],
+    "crossborder": [
+      "锂电池（需MSDS+UN38.3，部分渠道拒收）",
+      "液体/膏体（航空限制）",
+      "粉末状物品",
+      "带磁产品（需消磁）",
+      "食品（需卫生检疫证）",
+      "化妆品（需成分检测报告）",
+      "植物/种子（需检疫）",
+      "名牌仿品（直接封店）"
+    ],
+    "title_en": "Commonly Prohibited / Restricted Categories",
+    "domestic_en": [
+      "Medicines / medical devices (qualification required)",
+      "Tobacco / e-cigarettes",
+      "Imitation weapons / restricted knives",
+      "Wildlife products",
+      "Pornographic / vulgar content",
+      "Counterfeit branded goods",
+      "Financial products / virtual currency",
+      "Lottery tickets"
+    ],
+    "crossborder_en": [
+      "Lithium batteries (need MSDS + UN38.3; some channels reject them)",
+      "Liquids / pastes (air transport restrictions)",
+      "Powdered items",
+      "Magnetic products (must be demagnetized)",
+      "Food (needs a health/quarantine certificate)",
+      "Cosmetics (need an ingredient test report)",
+      "Plants / seeds (need quarantine)",
+      "Counterfeit branded goods (instant store ban)"
+    ]
+  },
+  "review_checklist": {
+    "title": "每日运营检查清单",
+    "items": [
+      "回复全部买家消息（响应时间影响权重）",
+      "处理待发货订单（48小时内）",
+      "检查差评并处理",
+      "监控广告花费和ACOS",
+      "查看竞品价格变动",
+      "检查库存预警",
+      "记录当日数据（访客/转化/销售额）"
+    ],
+    "title_en": "Daily Operations Checklist",
+    "items_en": [
+      "Reply to all buyer messages (response time affects ranking)",
+      "Process orders to ship (within 48 hours)",
+      "Check and handle negative reviews",
+      "Monitor ad spend and ACOS",
+      "Watch competitor price changes",
+      "Check inventory alerts",
+      "Record the day's data (visitors / conversions / sales)"
+    ]
+  }
+}

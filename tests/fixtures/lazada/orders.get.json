@@ -1,0 +1,19 @@
+{
+  "request_id": "ord456",
+  "Response": {
+    "TotalCount": 1,
+    "Orders": [
+      {
+        "OrderId": "G112001234567890",
+        "OrderNumber": "G112001234567890",
+        "Statuses": ["ready_to_ship"],
+        "Currency": "SGD",
+        "Price": 25.99,
+        "ShippingFee": 2.00,
+        "BuyerUserId": "buyer_john",
+        "PaidTime": 1760000000,
+        "UpdatedAt": 1760000000
+      }
+    ]
+  }
+}

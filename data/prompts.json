@@ -1,0 +1,130 @@
+{
+  "categories": [
+    {
+      "id": "listing",
+      "name_zh": "Listing优化",
+      "name_en": "Listing Optimization",
+      "prompts": [
+        {
+          "id": "title",
+          "title_zh": "高转化商品标题生成",
+          "title_en": "High-Converting Product Title",
+          "template_zh": "你是一位资深电商运营专家。请根据以下商品信息，为{平台}平台撰写一个高搜索排名、高点击率的商品标题。要求：1) 包含核心关键词和长尾词；2) 突出产品卖点和差异化；3) 符合{平台}标题规范（{平台}标题最长60字符/中文30字）；4) 不堆砌关键词。\n\n商品信息：{商品名称}\n核心卖点：{卖点描述}\n目标人群：{目标人群}\n价格区间：{价格}\n\n请输出3个标题方案。",
+          "template_en": "You are an experienced e-commerce expert. Write a high-ranking, high-CTR product title for {platform} based on: {product info}. Requirements: 1) Include core and long-tail keywords; 2) Highlight unique selling points; 3) Follow {platform} title rules; 4) No keyword stuffing.\n\nOutput 3 title options."
+        },
+        {
+          "id": "description",
+          "title_zh": "商品详情页描述生成",
+          "title_en": "Product Description Generation",
+          "template_zh": "请为以下商品撰写{平台}详情页描述文案。要求：1) 开头3秒抓住注意力；2) 按FAB法则（特征-优势-利益）展开；3) 包含使用场景描述；4) 加入信任背书（如质检、销量、评价）；5) 结尾有行动号召；6) 全文{字数}字以内，分段清晰，适合手机阅读。\n\n商品：{商品名称}\n核心卖点：{卖点}\n目标用户：{用户画像}",
+          "template_en": "Write a {platform} product description for: {product name}. Requirements: 1) Hook in first 3 seconds; 2) FAB structure (Features-Advantages-Benefits); 3) Include use scenarios; 4) Add trust signals; 5) Strong CTA; 6) Under {word_count} words, mobile-friendly formatting."
+        },
+        {
+          "id": "bullet",
+          "title_zh": "亚马逊五点描述",
+          "title_en": "Amazon Bullet Points",
+          "template_zh": "请为以下Amazon商品撰写5点Bullet Points。要求：1) 每点开头全大写核心卖点词；2) 每点不超过200字符；3) 涵盖：材质/工艺、功能/效果、使用场景、包装内容、品质保证；4) 埋入搜索关键词但不生硬；5) 用第二人称'You/Your'增强代入感。\n\n商品：{商品名称}\n类目：{类目}\n目标市场：{站点}",
+          "template_en": "Write 5 bullet points for this Amazon product. Requirements: 1) Start each with an ALL-CAPS key benefit phrase; 2) Each under 200 characters; 3) Cover materials/craftsmanship, features/results, use scenarios, what's in the box, and quality assurance; 4) Weave in search keywords naturally; 5) Use second person ('You/Your').\n\nProduct: {product name}\nCategory: {category}\nMarketplace: {site}"
+        }
+      ]
+    },
+    {
+      "id": "customer_service",
+      "name_zh": "客服话术",
+      "name_en": "Customer Service",
+      "prompts": [
+        {
+          "id": "reply",
+          "title_zh": "买家咨询回复",
+          "title_en": "Buyer Inquiry Response",
+          "template_zh": "你是{平台}店铺的专业客服。请根据以下买家消息，撰写一个专业、友好、促进转化的回复。要求：1) 先共情/感谢；2) 直接回答问题；3) 补充相关信息；4) 引导下单或打消顾虑；5) 语气自然不机械。\n\n买家消息：{买家原话}\n商品：{商品名称}\n店铺政策：{退换货政策/物流时效}",
+          "template_en": "You are a professional customer service rep for a {platform} store. Reply to this buyer message: {buyer message}. Requirements: 1) Empathize first; 2) Answer directly; 3) Add relevant info; 4) Guide toward purchase; 5) Natural tone."
+        },
+        {
+          "id": "review",
+          "title_zh": "差评回复模板",
+          "title_en": "Negative Review Response",
+          "template_zh": "请帮我回复以下{平台}差评。要求：1) 不辩解、不对抗；2) 真诚道歉并承认问题；3) 给出具体解决方案；4) 邀请私下联系解决；5) 让其他买家看到我们的负责任态度；6) 150字以内。\n\n差评内容：{差评原文}\n评分：{星级}星\n商品：{商品名称}",
+          "template_en": "Reply to this {platform} negative review: {review}. Requirements: 1) No defensiveness; 2) Sincere apology; 3) Concrete solution; 4) Invite private contact; 5) Show accountability to other buyers; 6) Under 150 words."
+        },
+        {
+          "id": "refund",
+          "title_zh": "退款纠纷处理话术",
+          "title_en": "Refund Dispute Handling",
+          "template_zh": "买家要求退款但原因不合理。请撰写回复，要求：1) 礼貌但坚定；2) 引用平台规则和店铺政策；3) 提供折中方案（如部分退款/补发/优惠券）；4) 不激化矛盾；5) 保护店铺权益。\n\n买家诉求：{诉求描述}\n订单情况：{订单状态/物流状态}\n商品：{商品名称}",
+          "template_en": "A buyer is requesting a refund for an unreasonable reason. Write a reply that: 1) Is polite but firm; 2) References platform rules and store policy; 3) Offers a compromise (partial refund / replacement / coupon); 4) Does not escalate; 5) Protects the store's interests.\n\nBuyer's request: {request}\nOrder status: {order/shipping status}\nProduct: {product name}"
+        }
+      ]
+    },
+    {
+      "id": "marketing",
+      "name_zh": "营销推广",
+      "name_en": "Marketing & Ads",
+      "prompts": [
+        {
+          "id": "ad_copy",
+          "title_zh": "广告文案生成",
+          "title_en": "Ad Copy Generation",
+          "template_zh": "请为{平台}广告生成{广告类型}文案。要求：1) 标题吸引人但不夸大；2) 突出核心卖点和价格优势；3) 符合{平台}广告审核规范；4) 包含行动号召；5) 提供3个版本（保守/标准/激进）。\n\n商品：{商品名称}\n卖点：{卖点}\n价格：{价格}\n活动：{促销活动}",
+          "template_en": "Generate {ad type} copy for a {platform} ad. Requirements: 1) An engaging title without exaggeration; 2) Highlight key benefits and price advantage; 3) Follow {platform} ad review rules; 4) Include a call to action; 5) Provide 3 versions (conservative / standard / aggressive).\n\nProduct: {product name}\nBenefits: {benefits}\nPrice: {price}\nPromotion: {promotion}"
+        },
+        {
+          "id": "short_video",
+          "title_zh": "短视频带货脚本",
+          "title_en": "Short Video Script",
+          "template_zh": "请为{平台}撰写一个{时长}秒的带货短视频脚本。要求：1) 前3秒黄金钩子；2) 产品痛点引入；3) 产品展示+使用效果；4) 价格对比+限时优惠；5) 结尾引导点击购物车；6) 标注镜头切换和字幕要点。\n\n商品：{商品名称}\n目标人群：{目标人群}\n核心卖点：{卖点}",
+          "template_en": "Write a {duration}-second product-selling short video script for {platform}. Requirements: 1) A strong hook in the first 3 seconds; 2) Introduce the pain point; 3) Product demo and results; 4) Price comparison plus limited-time offer; 5) End by directing viewers to the cart; 6) Note camera cuts and subtitle points.\n\nProduct: {product name}\nAudience: {audience}\nKey benefits: {benefits}"
+        },
+        {
+          "id": "promotion",
+          "title_zh": "促销活动方案",
+          "title_en": "Promotion Campaign Plan",
+          "template_zh": "请为{店铺类型}店铺制定一个{节日/大促}促销方案。预算{预算}元。要求包含：1) 活动节奏（预热/爆发/返场）；2) 折扣策略（满减/优惠券/秒杀）；3) 流量投放计划；4) 备货建议；5) 预期ROI估算；6) 风险预案。\n\n主营类目：{类目}\n客单价：{客单价}\n月销：{月销售额}",
+          "template_en": "Create a {holiday/mega-sale} promotion plan for a {store type} store with a budget of {budget}. Include: 1) Campaign rhythm (warm-up / peak / follow-up); 2) Discount strategy (spend-and-save / coupons / flash sale); 3) Traffic plan; 4) Stocking advice; 5) Estimated ROI; 6) Contingency plan.\n\nMain category: {category}\nAverage order value: {AOV}\nMonthly sales: {monthly sales}"
+        }
+      ]
+    },
+    {
+      "id": "selection",
+      "name_zh": "选品分析",
+      "name_en": "Product Research",
+      "prompts": [
+        {
+          "id": "validate",
+          "title_zh": "选品可行性评估",
+          "title_en": "Product Viability Assessment",
+          "template_zh": "请帮我评估在{平台}销售以下产品的可行性。要求从以下维度分析：1) 市场需求（搜索量趋势）；2) 竞争程度（头部卖家数量和评价数）；3) 利润空间（成本/售价/费用）；4) 物流难度（体积/重量/是否敏感品）；5) 季节性；6) 差异化机会；7) 进入门槛和风险。最后给出评分（1-10）和建议。\n\n产品：{产品名称}\n目标售价：{价格}\n采购成本：{成本}\n目标站点：{站点/市场}",
+          "template_en": "Assess the viability of selling this product on {platform}. Analyze: 1) Market demand (search-volume trend); 2) Competition (top sellers and review counts); 3) Profit margin (cost/price/fees); 4) Logistics difficulty (size/weight/sensitive goods); 5) Seasonality; 6) Differentiation opportunities; 7) Barriers and risks. End with a score (1-10) and a recommendation.\n\nProduct: {product name}\nTarget price: {price}\nPurchase cost: {cost}\nTarget site: {site/market}"
+        },
+        {
+          "id": "differentiate",
+          "title_zh": "产品差异化方向",
+          "title_en": "Product Differentiation Ideas",
+          "template_zh": "分析以下{平台}类目竞品的差评和常见抱怨，找出用户未被满足的需求，提出3-5个产品差异化改进方向。\n\n类目：{类目名称}\n价格区间：{价格范围}\n主要竞品：{竞品描述}\n已知差评痛点：{痛点列表（如有）}",
+          "template_en": "Analyze negative reviews and common complaints in this {platform} category to find unmet needs. Propose 3-5 product differentiation directions. Category: {category}, Price range: {price range}."
+        }
+      ]
+    },
+    {
+      "id": "operations",
+      "name_zh": "运营管理",
+      "name_en": "Operations",
+      "prompts": [
+        {
+          "id": "pricing",
+          "title_zh": "定价策略分析",
+          "title_en": "Pricing Strategy Analysis",
+          "template_zh": "请帮我分析以下商品的{平台}定价策略。已知：采购成本{成本}元，头程运费{运费}元，平台佣金{佣金}%，预计广告占比{广告}%，目标利润率{利润率}%。请计算：1) 保本售价；2) 建议售价区间；3) 不同定价策略（渗透定价/撇脂定价/竞争定价）的优劣；4) 促销折扣底线。\n\n商品：{商品名称}\n竞品价格：{竞品价格列表}",
+          "template_en": "Analyze the {platform} pricing strategy for this product. Given: purchase cost {cost}, first-mile shipping {shipping}, platform commission {commission}%, expected ad ratio {ads}%, target margin {margin}%. Calculate: 1) Break-even price; 2) Recommended price range; 3) Pros and cons of penetration / skimming / competitive pricing; 4) The minimum promotional discount.\n\nProduct: {product name}\nCompetitor prices: {competitor prices}"
+        },
+        {
+          "id": "inventory",
+          "title_zh": "备货计划",
+          "title_en": "Inventory Planning",
+          "template_zh": "请根据以下数据制定{时间周期}备货计划。要求：1) 安全库存计算；2) 补货周期考虑物流时效；3) 大促备货量；4) 滞销库存预警机制；5) 资金占用估算。\n\n月均销量：{销量}\n当前库存：{库存}\n物流时效：{头程天数}天\n在途库存：{在途量}",
+          "template_en": "Build a {period} stocking plan from the data below. Requirements: 1) Calculate safety stock; 2) Factor lead time into the replenishment cycle; 3) Stock quantity for major sales; 4) An alert mechanism for slow-moving inventory; 5) Estimate capital tied up.\n\nAverage monthly sales: {sales}\nCurrent stock: {stock}\nLead time: {first-mile days} days\nIn-transit stock: {in-transit qty}"
+        }
+      ]
+    }
+  ]
+}

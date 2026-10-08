@@ -1,0 +1,19 @@
+{
+  "request_id": "item789",
+  "Response": {
+    "OrderItems": [
+      {
+        "OrderItemId": "260422900298363",
+        "OrderId": "G112001234567890",
+        "ItemId": 2500139861,
+        "Sku": "EARBUD-01",
+        "Name": "Wireless Earbuds Pro",
+        "ModelSku": "EARBUD-01",
+        "Quantity": 1,
+        "PaidPrice": 25.99,
+        "OriginalPrice": 29.99,
+        "Status": "ready_to_ship"
+      }
+    ]
+  }
+}

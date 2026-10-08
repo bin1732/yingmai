@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>盈脉 YingMai · 架构总览</title>
+<style>
+  :root{
+    --bg:#f5f7fb; --card:#ffffff; --ink:#1f2733; --muted:#5d6b82;
+    --line:#e3e8f0; --brand:#2f6bff; --brand2:#0ea5a4;
+    --c1:#eef4ff; --c1b:#2f6bff;
+    --c2:#eafaf7; --c2b:#0ea5a4;
+    --c3:#fff5ec; --c3b:#e8893b;
+    --c4:#f3efff; --c4b:#7a5af8;
+    --c5:#eef2f7; --c5b:#5b6b85;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:"Segoe UI","Microsoft YaHei",system-ui,sans-serif;line-height:1.5}
+  .wrap{max-width:1180px;margin:0 auto;padding:40px 28px 64px}
+  header h1{margin:0;font-size:28px;letter-spacing:.5px}
+  header .sub{color:var(--muted);margin-top:6px;font-size:14px}
+  .meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+  .chip{font-size:12px;padding:4px 10px;border-radius:999px;background:var(--card);
+    border:1px solid var(--line);color:var(--muted)}
+  .layer{margin-top:22px;background:var(--card);border:1px solid var(--line);
+    border-radius:16px;padding:18px 20px;box-shadow:0 6px 20px rgba(31,39,51,.05)}
+  .layer h2{margin:0 0 4px;font-size:16px;display:flex;align-items:center;gap:10px}
+  .layer .desc{color:var(--muted);font-size:12.5px;margin:0 0 14px}
+  .tag{font-size:11px;color:#fff;border-radius:6px;padding:2px 8px;font-weight:600}
+  .grid{display:grid;gap:10px}
+  .g-auto{grid-template-columns:repeat(auto-fill,minmax(170px,1fr))}
+  .g-auto2{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}
+  .node{border-radius:10px;padding:10px 12px;font-size:13px;border:1px solid var(--line);
+    background:#fbfcfe}
+  .node b{display:block;font-size:13px}
+  .node span{color:var(--muted);font-size:11.5px}
+  .n1{background:var(--c1);border-color:#d3e2ff}
+  .n2{background:var(--c2);border-color:#cdeee8}
+  .n3{background:var(--c3);border-color:#f3ddc6}
+  .n4{background:var(--c4);border-color:#e0d6fb}
+  .n5{background:var(--c5);border-color:#dde4ee}
+  .arrow{text-align:center;color:#9aa7bb;font-size:18px;margin:2px 0}
+  .flow{display:flex;gap:14px;flex-wrap:wrap}
+  .col{flex:1;min-width:240px}
+  .legend{display:flex;gap:16px;flex-wrap:wrap;margin-top:10px;font-size:12px;color:var(--muted)}
+  .dot{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+  footer{margin-top:26px;color:var(--muted);font-size:12px;text-align:center}
+  code{background:#eef2f8;padding:1px 6px;border-radius:5px;font-size:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>盈脉 · YingMai 架构总览</h1>
+    <div class="sub">本地运行的电商经营桌面软件 · Electron 原生 GUI · 零服务器 · 数据与凭证仅保存在本机</div>
+    <div class="meta">
+      <span class="chip">版本 4.6.0</span>
+      <span class="chip">许可 GPL-3.0-only</span>
+      <span class="chip">内置对话模型（离线）</span>
+      <span class="chip">内置语音识别（离线）</span>
+      <span class="chip">14 个平台连接器</span>
+    </div>
+  </header>
+
+  <!-- 1 表现层 -->
+  <div class="layer">
+    <h2><span class="tag" style="background:var(--c1b)">1</span>表现层 · Electron 渲染进程（web/）</h2>
+    <p class="desc">毛玻璃大厂风格界面，31 个经营页面；浅色/深色、中英双语、用户引导与全局悬浮助手。</p>
+    <div class="grid g-auto">
+      <div class="node n1"><b>index.html</b><span>页面骨架与 31 个视图</span></div>
+      <div class="node n1"><b>app.js</b><span>导航、表单、页面联动</span></div>
+      <div class="node n1"><b>i18n.js / lang-phrases</b><span>真实中英双语词条</span></div>
+      <div class="node n1"><b>workbench.js / reviews.js</b><span>经营与评论交互</span></div>
+      <div class="node n1"><b>toolkits.js</b><span>工具与可视化接线</span></div>
+      <div class="node n1"><b>shopconn-web / tutorial</b><span>店铺连接与接入教程</span></div>
+      <div class="node n1"><b>voice-web.js</b><span>录音 → 转写</span></div>
+      <div class="node n1"><b>echarts</b><span>曲线 / 热力图渲染</span></div>
+    </div>
+  </div>
+  <div class="arrow">▼ HTTP（本机 8787）</div>
+
+  <!-- 2 接口与服务层 -->
+  <div class="layer">
+    <h2><span class="tag" style="background:var(--c2b)">2</span>接口与应用服务层（src/main）</h2>
+    <p class="desc">本机 HTTP 服务统一路由；手机局域网访问在运行时提供同一数据视图（8788）。</p>
+    <div class="grid g-auto">
+      <div class="node n2"><b>backend.js</b><span>API 路由与静态服务</span></div>
+      <div class="node n2"><b>mobile.js</b><span>局域网访问（启用才监听）</span></div>
+      <div class="node n2"><b>dataanswers.js</b><span>数据问答与计算</span></div>
+      <div class="node n2"><b>insights.js</b><span>指标洞察与报表</span></div>
+      <div class="node n2"><b>connectors.js</b><span>外部数据接入辅助</span></div>
+      <div class="node n2"><b>calc.js</b><span>利润 / 广告 / 敏感性</span></div>
+    </div>
+  </div>
+
+  <!-- 3 引擎与领域层 -->
+  <div class="layer">
+    <h2><span class="tag" style="background:var(--c3b)">3</span>AI 引擎与领域核心（src/main）</h2>
+    <p class="desc">三类引擎真实路由与切换；领域服务把商品、库存、单据、资金、客户与预警联动。</p>
+    <div class="grid g-auto">
+      <div class="node n3"><b>engine.js</b><span>内置 / 云端 / 本地路由</span></div>
+      <div class="node n3"><b>presets.js</b><span>服务商预设与默认配置</span></div>
+      <div class="node n3"><b>voice.js</b><span>离线语音识别（懒加载）</span></div>
+      <div class="node n3"><b>domain.js</b><span>单据状态机与业务联动</span></div>
+    </div>
+  </div>
+
+  <!-- 4 连接器层 -->
+  <div class="layer">
+    <h2><span class="tag" style="background:var(--c4b)">4</span>店铺 / 货源连接器（src/main/shopconn）</h2>
+    <p class="desc">统一适配契约：注册、凭证加密、增量同步、分页、按平台限额退避；catalog 为平台状态单一事实源。</p>
+    <div class="node n4" style="margin-bottom:10px"><b>index.js（注册表 / 调度 / 状态） ＋ catalog.js（14 平台分档与官方链接）</b></div>
+    <div class="grid g-auto2">
+      <div class="node n4"><b>Shopify</b><span>可直接接入</span></div>
+      <div class="node n4"><b>Amazon / eBay</b><span>可自助授权</span></div>
+      <div class="node n4"><b>Shopee</b><span>需开发者审核</span></div>
+      <div class="node n4"><b>AliExpress</b><span>需开发者审核</span></div>
+      <div class="node n4"><b>TikTok Shop</b><span>需开发者审核</span></div>
+      <div class="node n4"><b>Lazada</b><span>需开发者审核</span></div>
+      <div class="node n4"><b>1688（货源）</b><span>需开发者审核</span></div>
+      <div class="node n4"><b>淘宝 / 京东</b><span>受限，以审核为准</span></div>
+      <div class="node n4"><b>拼多多 / 抖店</b><span>受限，以审核为准</span></div>
+      <div class="node n4"><b>快手 / 小红书</b><span>受限，以审核为准</span></div>
+    </div>
+  </div>
+  <div class="arrow">▼ 读写 / 加密</div>
+
+  <!-- 5 数据与模型层 -->
+  <div class="layer">
+    <h2><span class="tag" style="background:var(--c5b)">5</span>数据、凭证与模型层</h2>
+    <p class="desc">JSON 持久化与凭证加密；平台参考数据与离线模型随软件提供。</p>
+    <div class="grid g-auto">
+      <div class="node n5"><b>store.js</b><span>集合持久化与缓存</span></div>
+      <div class="node n5"><b>vault.js</b><span>safeStorage / 本机加密</span></div>
+      <div class="node n5"><b>datatransfer.js</b><span>导入 / 导出 / 备份</span></div>
+      <div class="node n5"><b>appsettings.js</b><span>外观 / 语言 / 行为设置</span></div>
+      <div class="node n5"><b>data/*.json</b><span>费率 / 平台 / 物流 / 合规等</span></div>
+      <div class="node n5"><b>models/</b><span>对话 GGUF ＋ 语音 ONNX</span></div>
+    </div>
+  </div>
+
+  <!-- 6 运行时与外部 -->
+  <div class="layer">
+    <h2><span class="tag" style="background:#374151">6</span>运行时外壳与外部连接</h2>
+    <div class="flow">
+      <div class="col">
+        <div class="node n5"><b>Electron 主进程</b><span>main.js / launch.js：窗口、托盘、关窗提示、记住选择</span></div>
+      </div>
+      <div class="col">
+        <div class="node n5"><b>外部（仅在用户配置后）</b><span>平台官方 API · 云端模型服务商 · 本地 Ollama / LM Studio</span></div>
+      </div>
+    </div>
+    <div class="legend">
+      <span><i class="dot" style="background:var(--c1b)"></i>表现层</span>
+      <span><i class="dot" style="background:var(--c2b)"></i>接口服务</span>
+      <span><i class="dot" style="background:var(--c3b)"></i>引擎 / 领域</span>
+      <span><i class="dot" style="background:var(--c4b)"></i>连接器</span>
+      <span><i class="dot" style="background:var(--c5b)"></i>数据 / 模型</span>
+    </div>
+  </div>
+
+  <footer>
+    制作：灵感引擎工坊 · bin1732 ｜ 平台与服务商名称、标识归相应权利人所有，本软件与其不存在官方授权或隶属关系。<br>
+    平台规则、费率与接口可能调整，请以各平台官方最新信息为准。
+  </footer>
+</div>
+</body>
+</html>

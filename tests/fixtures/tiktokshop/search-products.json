@@ -1,0 +1,20 @@
+{
+  "code": 0,
+  "message": "Success",
+  "data": {
+    "total_count": 2,
+    "products": [
+      {
+        "id": "1729432087292775344",
+        "title": "Wireless Earbuds Pro",
+        "status": "SELLER_DEACTIVATED"
+      },
+      {
+        "id": "1729432087292775345",
+        "title": "Cotton T-Shirt",
+        "status": "LIVE"
+      }
+    ],
+    "next_page_token": ""
+  }
+}

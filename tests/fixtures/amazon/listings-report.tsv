@@ -1,0 +1,4 @@
+sku	asin1	product-name	your-price	quantity	status
+SKU-EARBUD-01	B0EXAMPLE01	Wireless Earbuds	25.99	25	open
+SKU-CABLE-02	B0EXAMPLE02	USB-C Cable 2m	9.50	0	closed
+SKU-CASE-03	B0EXAMPLE03	Phone Case	12.00	10	open

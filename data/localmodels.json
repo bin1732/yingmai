@@ -1,0 +1,156 @@
+{
+  "models": [
+    {
+      "id": "qwen25-1b5-q4km",
+      "tier": "low",
+      "family": "qwen2.5",
+      "label": { "zh": "Qwen2.5-1.5B · 轻量", "en": "Qwen2.5-1.5B · Light" },
+      "desc": {
+        "zh": "适合 4GB 显存 / 8GB 内存，响应轻快，是软件默认内置模型。",
+        "en": "For 4GB VRAM / 8GB RAM; fast responses; the default built-in model."
+      },
+      "min_vram_mb": 2048,
+      "rec_vram_mb": 4096,
+      "rec_ram_mb": 8192,
+      "total_size": 1117320736,
+      "bundled": true,
+      "source_page": "https://modelscope.cn/models/Qwen/Qwen2.5-1.5B-Instruct-GGUF",
+      "select_file": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+      "files": [
+        {
+          "name": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+          "size": 1117320736,
+          "url": "https://modelscope.cn/models/Qwen/Qwen2.5-1.5B-Instruct-GGUF/resolve/master/qwen2.5-1.5b-instruct-q4_k_m.gguf"
+        }
+      ]
+    },
+    {
+      "id": "qwen35-2b-q4km",
+      "tier": "low",
+      "family": "qwen3.5",
+      "force_direct": true,
+      "label": { "zh": "Qwen3.5-2B · 新一代轻量", "en": "Qwen3.5-2B · New-Gen Light" },
+      "desc": {
+        "zh": "新一代轻量模型，中文与指令遵循更好，体积增加不多；适合 4GB 显存 / 8GB 内存。",
+        "en": "Newer lightweight model with better Chinese and instruction following at a small size increase. For 4GB VRAM / 8GB RAM."
+      },
+      "min_vram_mb": 2048,
+      "rec_vram_mb": 4096,
+      "rec_ram_mb": 8192,
+      "total_size": 1396198496,
+      "bundled": false,
+      "source_page": "https://modelscope.cn/models/bartowski/Qwen_Qwen3.5-2B-GGUF",
+      "select_file": "Qwen_Qwen3.5-2B-Q4_K_M.gguf",
+      "files": [
+        {
+          "name": "Qwen_Qwen3.5-2B-Q4_K_M.gguf",
+          "size": 1396198496,
+          "url": "https://modelscope.cn/models/bartowski/Qwen_Qwen3.5-2B-GGUF/resolve/master/Qwen_Qwen3.5-2B-Q4_K_M.gguf"
+        }
+      ]
+    },
+    {
+      "id": "qwen25-3b-q4km",
+      "tier": "mid",
+      "family": "qwen2.5",
+      "label": { "zh": "Qwen2.5-3B · 均衡", "en": "Qwen2.5-3B · Balanced" },
+      "desc": {
+        "zh": "适合 8GB 显存 / 16GB 内存，理解与长文能力更稳，速度与质量均衡。",
+        "en": "For 8GB VRAM / 16GB RAM; stronger reasoning and long-text handling with balanced speed."
+      },
+      "min_vram_mb": 4096,
+      "rec_vram_mb": 8192,
+      "rec_ram_mb": 16384,
+      "total_size": 2104932768,
+      "bundled": false,
+      "source_page": "https://modelscope.cn/models/Qwen/Qwen2.5-3B-Instruct-GGUF",
+      "select_file": "qwen2.5-3b-instruct-q4_k_m.gguf",
+      "files": [
+        {
+          "name": "qwen2.5-3b-instruct-q4_k_m.gguf",
+          "size": 2104932768,
+          "url": "https://modelscope.cn/models/Qwen/Qwen2.5-3B-Instruct-GGUF/resolve/master/qwen2.5-3b-instruct-q4_k_m.gguf"
+        }
+      ]
+    },
+    {
+      "id": "qwen35-4b-q4km",
+      "tier": "mid",
+      "family": "qwen3.5",
+      "force_direct": true,
+      "label": { "zh": "Qwen3.5-4B · 新一代均衡", "en": "Qwen3.5-4B · New-Gen Balanced" },
+      "desc": {
+        "zh": "新一代均衡模型，复杂问答与文案更稳；适合 8GB 显存 / 16GB 内存。",
+        "en": "Newer balanced model with steadier complex Q&A and copy. For 8GB VRAM / 16GB RAM."
+      },
+      "min_vram_mb": 4096,
+      "rec_vram_mb": 8192,
+      "rec_ram_mb": 16384,
+      "total_size": 3013027808,
+      "bundled": false,
+      "source_page": "https://modelscope.cn/models/bartowski/Qwen_Qwen3.5-4B-GGUF",
+      "select_file": "Qwen_Qwen3.5-4B-Q4_K_M.gguf",
+      "files": [
+        {
+          "name": "Qwen_Qwen3.5-4B-Q4_K_M.gguf",
+          "size": 3013027808,
+          "url": "https://modelscope.cn/models/bartowski/Qwen_Qwen3.5-4B-GGUF/resolve/master/Qwen_Qwen3.5-4B-Q4_K_M.gguf"
+        }
+      ]
+    },
+    {
+      "id": "qwen25-7b-q4km",
+      "tier": "high",
+      "family": "qwen2.5",
+      "label": { "zh": "Qwen2.5-7B · 增强", "en": "Qwen2.5-7B · Enhanced" },
+      "desc": {
+        "zh": "适合 12GB 及以上显存 / 32GB 内存，复杂分析与文案质量更好；分为两个文件，需一起下载。",
+        "en": "For 12GB+ VRAM / 32GB RAM; better complex analysis and copy. Split into two parts; download both."
+      },
+      "min_vram_mb": 8192,
+      "rec_vram_mb": 12288,
+      "rec_ram_mb": 32768,
+      "total_size": 4683073632,
+      "bundled": false,
+      "source_page": "https://modelscope.cn/models/Qwen/Qwen2.5-7B-Instruct-GGUF",
+      "select_file": "qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+      "files": [
+        {
+          "name": "qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+          "size": 3993201344,
+          "url": "https://modelscope.cn/models/Qwen/Qwen2.5-7B-Instruct-GGUF/resolve/master/qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf"
+        },
+        {
+          "name": "qwen2.5-7b-instruct-q4_k_m-00002-of-00002.gguf",
+          "size": 689872288,
+          "url": "https://modelscope.cn/models/Qwen/Qwen2.5-7B-Instruct-GGUF/resolve/master/qwen2.5-7b-instruct-q4_k_m-00002-of-00002.gguf"
+        }
+      ]
+    },
+    {
+      "id": "qwen35-9b-q4km",
+      "tier": "high",
+      "family": "qwen3.5",
+      "force_direct": true,
+      "label": { "zh": "Qwen3.5-9B · 新一代增强", "en": "Qwen3.5-9B · New-Gen Enhanced" },
+      "desc": {
+        "zh": "新一代增强模型，分析、长文与多语言表现更好；适合 12GB 及以上显存 / 32GB 内存。",
+        "en": "Newer enhanced model with stronger analysis, long-text and multilingual performance. For 12GB+ VRAM / 32GB RAM."
+      },
+      "min_vram_mb": 8192,
+      "rec_vram_mb": 12288,
+      "rec_ram_mb": 32768,
+      "total_size": 6169341984,
+      "bundled": false,
+      "source_page": "https://modelscope.cn/models/bartowski/Qwen_Qwen3.5-9B-GGUF",
+      "select_file": "Qwen_Qwen3.5-9B-Q4_K_M.gguf",
+      "files": [
+        {
+          "name": "Qwen_Qwen3.5-9B-Q4_K_M.gguf",
+          "size": 6169341984,
+          "url": "https://modelscope.cn/models/bartowski/Qwen_Qwen3.5-9B-GGUF/resolve/master/Qwen_Qwen3.5-9B-Q4_K_M.gguf"
+        }
+      ]
+    }
+  ]
+}

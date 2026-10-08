@@ -1,0 +1,34 @@
+{
+  "result": 1,
+  "data": {
+    "total": 1,
+    "order_list": [
+      {
+        "order_id": "KS20261001001",
+        "order_status": "20",
+        "order_total": 250,
+        "post_amount": 6,
+        "buyer_id": "buyer_john",
+        "receiver_name": "张三",
+        "receiver_tel": "13800000000",
+        "province": "广东省",
+        "city": "深圳市",
+        "town": "南山区",
+        "address": "科技园南路 100 号",
+        "create_time": "2026-10-01 10:00:00",
+        "update_time": "2026-10-01 10:05:00",
+        "item_list": [
+          {
+            "item_id": "600001",
+            "sku_id": "800001",
+            "outer_sku_id": "EARBUD-W",
+            "item_name": "无线蓝牙耳机",
+            "price": 125,
+            "item_num": 2,
+            "pay_amount": 250
+          }
+        ]
+      }
+    ]
+  }
+}
