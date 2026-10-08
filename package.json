@@ -42,7 +42,7 @@
     "dist:nsis": "electron-builder --win nsis"
   },
   "dependencies": {
-    "node-llama-cpp": "^3.0.0",
+    "node-llama-cpp": "^3.22.1",
     "qrcode": "^1.5.4",
     "sherpa-onnx-node": "^1.13.8"
   },
