@@ -1,0 +1,28 @@
+# 默认统一文本与换行符
+* text=auto eol=lf
+
+# 源码与配置
+*.js     text eol=lf
+*.json   text eol=lf
+*.html   text eol=lf
+*.css    text eol=lf
+*.md     text eol=lf
+*.txt    text eol=lf
+*.yml    text eol=lf
+*.yaml   text eol=lf
+*.svg    text eol=lf
+
+# Windows 专用
+*.bat    text eol=crlf
+*.cmd    text eol=crlf
+*.ps1    text eol=crlf
+*.nsi    text eol=crlf
+
+# 二进制资源
+*.ico    binary
+*.png    binary
+*.jpg    binary
+*.jpeg   binary
+*.gguf   binary
+*.onnx   binary
+*.7z     binary

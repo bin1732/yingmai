@@ -1,0 +1,105 @@
+{
+  "updated": "2026-10",
+  "currency_note": "以下费率为公开口径整理的参考默认值，各平台会按类目、店铺类型、站点和活动调整。用于经营测算，实际扣费以平台结算单为准；你可以在工作台中按自己的类目修改这些数值。",
+  "currency_note_en": "These are reference rates compiled from public sources. Platforms adjust them by category, store type, site and promotion. Use them for business estimates; actual charges follow the platform settlement statement. You can edit these values for your own categories.",
+  "platforms": {
+    "taobao": {
+      "name_zh": "淘宝", "name_en": "Taobao", "currency": "CNY", "referral_pct": 0, "payment_pct": 0.6,
+      "referral_range": "多数类目个人店无平台佣金", "referral_range_en": "Most categories: no commission for individual stores",
+      "payment_range": "支付/收款服务费常见约0.6%，以支付宝协议为准", "payment_range_en": "Payment service fee around 0.6%, per Alipay terms",
+      "fulfillment_note": "自发货，物流费与快递协商", "fulfillment_note_en": "Self-fulfilled; negotiate shipping with the carrier",
+      "official": "https://rulechannel.taobao.com"
+    },
+    "tmall": {
+      "name_zh": "天猫", "name_en": "Tmall", "currency": "CNY", "referral_pct": 3, "payment_pct": 0.6,
+      "referral_range": "软件服务费按类目划扣，常见约2%-5%，另有年费", "referral_range_en": "Software service fee by category, often 2%-5%, plus an annual fee",
+      "payment_range": "支付服务费常见约0.6%", "payment_range_en": "Payment service fee around 0.6%",
+      "fulfillment_note": "自发货，物流费与快递协商", "fulfillment_note_en": "Self-fulfilled; negotiate shipping with the carrier",
+      "official": "https://rulechannel.tmall.com"
+    },
+    "jd": {
+      "name_zh": "京东", "name_en": "JD.com", "currency": "CNY", "referral_pct": 5, "payment_pct": 0.5,
+      "referral_range": "平台服务费（扣点）按类目，POP常见约3%-8%", "referral_range_en": "Platform service fee by category; POP often 3%-8%",
+      "payment_range": "支付服务费常见约0.5%", "payment_range_en": "Payment service fee around 0.5%",
+      "fulfillment_note": "可使用京东仓配，费用以京东物流报价为准", "fulfillment_note_en": "JD warehousing available; rates per JD Logistics quote",
+      "official": "https://rule.jd.com"
+    },
+    "pdd": {
+      "name_zh": "拼多多", "name_en": "Pinduoduo", "currency": "CNY", "referral_pct": 0, "payment_pct": 0.6,
+      "referral_range": "多数类目基础服务费为0，部分类目与活动另有技术服务费", "referral_range_en": "Base service fee is 0 for most categories; some have extra technical service fees",
+      "payment_range": "支付渠道服务费常见约0.6%", "payment_range_en": "Payment channel fee around 0.6%",
+      "fulfillment_note": "自发货，物流费与快递协商", "fulfillment_note_en": "Self-fulfilled; negotiate shipping with the carrier",
+      "official": "https://mms.pinduoduo.com"
+    },
+    "douyin": {
+      "name_zh": "抖音电商", "name_en": "Douyin E-commerce", "currency": "CNY", "referral_pct": 5, "payment_pct": 0.6,
+      "referral_range": "技术服务费按类目，常见约1%-5%", "referral_range_en": "Technical service fee by category, often 1%-5%",
+      "payment_range": "支付服务费常见约0.6%", "payment_range_en": "Payment service fee around 0.6%",
+      "fulfillment_note": "自发货为主，部分类目可用平台仓配", "fulfillment_note_en": "Mostly self-fulfilled; platform warehousing available for some categories",
+      "official": "https://school.jinritemai.com"
+    },
+    "kuaishou": {
+      "name_zh": "快手电商", "name_en": "Kuaishou E-commerce", "currency": "CNY", "referral_pct": 5, "payment_pct": 0.6,
+      "referral_range": "技术服务费按类目，常见约5%，部分类目更低", "referral_range_en": "Technical service fee by category, often 5%, lower for some",
+      "payment_range": "支付服务费常见约0.6%", "payment_range_en": "Payment service fee around 0.6%",
+      "fulfillment_note": "自发货为主", "fulfillment_note_en": "Mostly self-fulfilled",
+      "official": "https://www.kwaixiaodian.com"
+    },
+    "xiaohongshu": {
+      "name_zh": "小红书", "name_en": "Xiaohongshu (RED)", "currency": "CNY", "referral_pct": 5, "payment_pct": 0.6,
+      "referral_range": "技术服务费按店铺类型与类目，常见约5%", "referral_range_en": "Technical service fee by store type and category, often 5%",
+      "payment_range": "支付服务费常见约0.6%", "payment_range_en": "Payment service fee around 0.6%",
+      "fulfillment_note": "自发货为主", "fulfillment_note_en": "Mostly self-fulfilled",
+      "official": "https://ark.xiaohongshu.com"
+    },
+    "amazon": {
+      "name_zh": "亚马逊", "name_en": "Amazon", "currency": "USD", "referral_pct": 15, "payment_pct": 0,
+      "referral_range": "销售佣金多数类目约8%-15%（常见15%）", "referral_range_en": "Referral fee around 8%-15% for most categories (often 15%)",
+      "payment_range": "无单独支付费率，含在平台费用中", "payment_range_en": "No separate payment fee; included in platform fees",
+      "fulfillment_note": "FBA 按件收取拣货打包、仓储等费用，需按站点与尺寸分段填写", "fulfillment_note_en": "FBA charges per-unit pick, pack and storage by site and size tier",
+      "official": "https://sell.amazon.com/pricing"
+    },
+    "shopee": {
+      "name_zh": "虾皮", "name_en": "Shopee", "currency": "USD", "referral_pct": 6, "payment_pct": 2,
+      "referral_range": "佣金费率按站点与类目，常见约5%-6%", "referral_range_en": "Commission by site and category, often 5%-6%",
+      "payment_range": "交易/服务费常见约2%，以各站点为准", "payment_range_en": "Transaction/service fee around 2%, varies by site",
+      "fulfillment_note": "可使用 Shopee 官方仓配（SLS），费用按重量与站点", "fulfillment_note_en": "Shopee Logistics (SLS) available; fees by weight and site",
+      "official": "https://shopee.cn/edu/home"
+    },
+    "tiktokshop": {
+      "name_zh": "TikTok Shop", "name_en": "TikTok Shop", "currency": "USD", "referral_pct": 6, "payment_pct": 0,
+      "referral_range": "佣金按站点与类目，常见约5%-8%，达人佣金另计", "referral_range_en": "Commission by site and category, often 5%-8%; creator commission separate",
+      "payment_range": "含在平台费用中", "payment_range_en": "Included in platform fees",
+      "fulfillment_note": "可使用平台仓配（FBT），费用以站点为准", "fulfillment_note_en": "Fulfilled by TikTok (FBT) available; fees by site",
+      "official": "https://seller.tiktokglobalshop.com"
+    },
+    "shopify": {
+      "name_zh": "Shopify", "name_en": "Shopify", "currency": "USD", "referral_pct": 0, "payment_pct": 2.9,
+      "referral_range": "独立站无平台佣金", "referral_range_en": "No marketplace commission for a standalone store",
+      "payment_range": "Shopify Payments 常见约2.9%加固定费用；第三方网关另收订单费", "payment_range_en": "Shopify Payments around 2.9% plus a fixed fee; third-party gateways charge a transaction fee",
+      "fulfillment_note": "自发货或使用3PL；另有套餐月费", "fulfillment_note_en": "Self-fulfilled or 3PL; plus a monthly plan fee",
+      "official": "https://www.shopify.com/pricing"
+    },
+    "ebay": {
+      "name_zh": "eBay", "name_en": "eBay", "currency": "USD", "referral_pct": 13, "payment_pct": 0,
+      "referral_range": "成交费按类目与店铺等级，常见约13%-15%", "referral_range_en": "Final value fee by category and store tier, often 13%-15%",
+      "payment_range": "含在成交费中", "payment_range_en": "Included in the final value fee",
+      "fulfillment_note": "自发货为主", "fulfillment_note_en": "Mostly self-fulfilled",
+      "official": "https://export.ebay.com"
+    },
+    "aliexpress": {
+      "name_zh": "速卖通", "name_en": "AliExpress", "currency": "USD", "referral_pct": 8, "payment_pct": 0,
+      "referral_range": "佣金按类目，常见约5%-8%", "referral_range_en": "Commission by category, often 5%-8%",
+      "payment_range": "含在平台费用中", "payment_range_en": "Included in platform fees",
+      "fulfillment_note": "自发货或平台物流（无忧物流）", "fulfillment_note_en": "Self-fulfilled or platform logistics (Cainiao)",
+      "official": "https://sell.aliexpress.com"
+    },
+    "lazada": {
+      "name_zh": "来赞达", "name_en": "Lazada", "currency": "USD", "referral_pct": 3, "payment_pct": 2,
+      "referral_range": "佣金按类目，常见约2%-4%", "referral_range_en": "Commission by category, often 2%-4%",
+      "payment_range": "支付/交易费常见约2%", "payment_range_en": "Payment/transaction fee around 2%",
+      "fulfillment_note": "可使用 Lazada 官方仓配（LGS）", "fulfillment_note_en": "Lazada Logistics (LGS) available",
+      "official": "https://sellercenter.lazada.com.ph"
+    }
+  }
+}

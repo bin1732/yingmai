@@ -1,0 +1,133 @@
+{
+  "name": "yingmai",
+  "version": "4.5.2",
+  "description": "盈脉 · 电商工作台 · YingMai Workbench",
+  "author": "灵感引擎工坊",
+  "license": "GPL-3.0-only",
+  "main": "src/main/main.js",
+  "homepage": "https://github.com/bin1732/yingmai#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bin1732/yingmai.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bin1732/yingmai/issues"
+  },
+  "keywords": [
+    "ecommerce",
+    "e-commerce",
+    "workbench",
+    "seller",
+    "cross-border",
+    "amazon",
+    "shopify",
+    "shopee",
+    "taobao",
+    "jd",
+    "offline",
+    "llm",
+    "electron",
+    "desktop",
+    "yingmai"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "setup": "node build/fetch-models.js",
+    "test": "node tests/domain.test.js",
+    "app": "electron .",
+    "dist": "electron-builder --win",
+    "dist:portable": "electron-builder --win portable",
+    "dist:nsis": "electron-builder --win nsis"
+  },
+  "dependencies": {
+    "node-llama-cpp": "^3.0.0",
+    "qrcode": "^1.5.4",
+    "sherpa-onnx-node": "^1.13.8"
+  },
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "com.linggan.yingmai",
+    "productName": "盈脉",
+    "executableName": "YingMai",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "src/**/*",
+      "web/**/*",
+      "package.json",
+      "LICENSE",
+      "NOTICE"
+    ],
+    "extraResources": [
+      {
+        "from": "LICENSE",
+        "to": "LICENSE"
+      },
+      {
+        "from": "NOTICE",
+        "to": "NOTICE"
+      },
+      {
+        "from": "models",
+        "to": "models",
+        "filter": [
+          "**/*"
+        ]
+      },
+      {
+        "from": "data",
+        "to": "data",
+        "filter": [
+          "**/*.json"
+        ]
+      },
+      {
+        "from": "build/icon.ico",
+        "to": "build/icon.ico"
+      }
+    ],
+    "asarUnpack": [
+      "node_modules/node-llama-cpp/**/*",
+      "node_modules/@node-llama-cpp/**/*",
+      "node_modules/@reflink/**/*",
+      "node_modules/sherpa-onnx-node/**/*",
+      "node_modules/sherpa-onnx-win-x64/**/*"
+    ],
+    "win": {
+      "icon": "build/icon.ico",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "differentialPackage": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "盈脉"
+    },
+    "portable": {
+      "artifactName": "盈脉-便携版.exe",
+      "unpackDirName": "盈脉便携版"
+    }
+  }
+}

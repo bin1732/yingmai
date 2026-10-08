@@ -1,0 +1,55 @@
+{
+  "pdd_order_list_get_response": {
+    "order_list": [
+      {
+        "order_sn": "26100112345678",
+        "order_status": 1,
+        "pay_amount": 25000,
+        "postage": 0,
+        "created_time": "2026-10-01 12:12:12",
+        "last_updated_time": "2026-10-01 12:20:00",
+        "receiver_name": "张**",
+        "receiver_mobile": "138****0000",
+        "receiver_province": "广东省",
+        "receiver_city": "东莞市",
+        "receiver_town": "南城区",
+        "receiver_address": "xx 路 100 号",
+        "item_list": [
+          {
+            "goods_id": 710000000001,
+            "goods_name": "无线蓝牙耳机 Pro",
+            "goods_price": 12500,
+            "goods_count": 2,
+            "sku_id": 8100000001,
+            "sku_number": "EARBUD-WHITE"
+          }
+        ]
+      },
+      {
+        "order_sn": "26092012345678",
+        "order_status": 4,
+        "pay_amount": 6590,
+        "postage": 600,
+        "created_time": "2026-09-20 10:00:00",
+        "last_updated_time": "2026-09-25 10:00:00",
+        "receiver_name": "李**",
+        "receiver_mobile": "139****1111",
+        "receiver_province": "广东省",
+        "receiver_city": "深圳市",
+        "receiver_town": "南山区",
+        "receiver_address": "xx 大道 8 号",
+        "item_list": [
+          {
+            "goods_id": 710000000002,
+            "goods_name": "纯棉短袖 T 恤",
+            "goods_price": 5990,
+            "goods_count": 1,
+            "sku_id": 0,
+            "sku_number": "TSHIRT-01"
+          }
+        ]
+      }
+    ],
+    "total_count": 2
+  }
+}

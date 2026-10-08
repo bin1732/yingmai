@@ -1,0 +1,16 @@
+{
+  "code": 0,
+  "message": "Success",
+  "data": {
+    "shops": [
+      {
+        "id": "7461234567890123456",
+        "name": "YingMai Test Store",
+        "region": "US",
+        "seller_type": "CROSS_BORDER",
+        "cipher": "GCP_XF90igAAAABh00qsWgtvOiGFNqyubMt3",
+        "code": "CNGBCBA4LLU8"
+      }
+    ]
+  }
+}

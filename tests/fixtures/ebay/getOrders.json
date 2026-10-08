@@ -1,0 +1,50 @@
+{
+  "href": "https://api.ebay.com/sell/fulfillment/v1/order?limit=50&offset=0",
+  "total": 1,
+  "offset": 0,
+  "limit": 50,
+  "orders": [
+    {
+      "orderId": "20-1234567-90200",
+      "creationDate": "2026-10-01T12:00:00.000Z",
+      "lastModifiedDate": "2026-10-02T08:30:00.000Z",
+      "orderFulfillmentStatus": "FULFILLMENT_STARTED",
+      "orderPaymentStatus": "PAID",
+      "buyer": { "username": "buyer_john" },
+      "cancelStatus": { "cancelState": "NONE_REQUESTED", "cancelRequests": [] },
+      "pricingSummary": {
+        "subtotal": { "value": "25.99", "currency": "USD" },
+        "delivery": { "value": "5.00", "currency": "USD" },
+        "tax": { "value": "2.10", "currency": "USD" },
+        "discount": { "value": "0.00", "currency": "USD" },
+        "amountPaid": { "value": "33.09", "currency": "USD" }
+      },
+      "fulfillmentStartInstructions": [
+        {
+          "shippingStep": {
+            "shipTo": {
+              "fullName": "John Buyer",
+              "contactAddress": {
+                "addressLine1": "1850 Airport Exchange Blvd #200",
+                "city": "Erlanger",
+                "stateOrProvince": "KY",
+                "postalCode": "41025",
+                "countryCode": "US"
+              }
+            }
+          }
+        }
+      ],
+      "lineItems": [
+        {
+          "lineItemId": "L1",
+          "legacyItemId": "123456789012",
+          "sku": "EARBUD-01",
+          "title": "Wireless Earbuds Pro",
+          "quantity": 1,
+          "price": { "value": "25.99", "currency": "USD" }
+        }
+      ]
+    }
+  ]
+}

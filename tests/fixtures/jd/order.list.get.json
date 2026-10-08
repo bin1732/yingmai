@@ -1,0 +1,62 @@
+{
+  "jingdong_order_list_get_responce": {
+    "code": 0,
+    "orderList": {
+      "order": [
+        {
+          "orderId": "JD1000000000001",
+          "orderState": 2,
+          "created": "2026-10-01 12:12:12",
+          "payTime": "2026-10-01 12:20:00",
+          "payment": "250.00",
+          "freightPrice": "0.00",
+          "buyerInfo": { "nick": "buyer_john" },
+          "consignee": {
+            "name": "张**",
+            "mobile": "138****0000",
+            "province": "广东省",
+            "city": "东莞市",
+            "address": "南城区 xx 路 100 号"
+          },
+          "itemList": [
+            {
+              "skuId": 200001,
+              "wareId": 10000001,
+              "skuName": "无线蓝牙耳机 Pro",
+              "skuNum": 2,
+              "orderPrice": 125.00,
+              "outerSkuId": "EARBUD-WHITE"
+            }
+          ]
+        },
+        {
+          "orderId": "JD1000000000099",
+          "orderState": 4,
+          "created": "2026-09-20 10:00:00",
+          "payTime": "2026-09-20 10:05:00",
+          "consignTime": "2026-09-21 10:00:00",
+          "payment": "59.90",
+          "freightPrice": "6.00",
+          "buyerInfo": { "nick": "buyer_jane" },
+          "consignee": {
+            "name": "李**",
+            "mobile": "139****1111",
+            "province": "广东省",
+            "city": "深圳市",
+            "address": "南山区 xx 大道 8 号"
+          },
+          "itemList": [
+            {
+              "skuId": 0,
+              "wareId": 10000002,
+              "skuName": "纯棉短袖 T 恤",
+              "skuNum": 1,
+              "orderPrice": 59.90,
+              "outerSkuId": "TSHIRT-01"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

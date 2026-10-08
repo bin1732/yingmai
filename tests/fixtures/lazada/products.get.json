@@ -1,0 +1,14 @@
+{
+  "request_id": "list123",
+  "Response": {
+    "TotalCount": 1,
+    "Products": [
+      {
+        "ItemId": 2500139861,
+        "ItemName": "Wireless Earbuds Pro",
+        "Status": "active",
+        "UpdatedAt": 1760000000
+      }
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "request_id": "inv012",
+  "Response": {
+    "Products": [
+      { "Sku": "EARBUD-01", "Quantity": 25 },
+      { "Sku": "TSHIRT-M-RED", "Quantity": 10 }
+    ]
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "international_shipping": [
+    {
+      "name": "邮政小包",
+      "name_en": "China Post Small Packet",
+      "min_cost": "¥0.08/g",
+      "days": "15-45天",
+      "best_for": "轻小件(<2kg)、低货值、不急",
+      "pros": "便宜、清关能力强",
+      "cons": "慢、跟踪信息少、丢件率较高",
+      "days_en": "15-45 days",
+      "best_for_en": "Light items (<2kg), low value, not urgent",
+      "pros_en": "Cheap, good customs clearance",
+      "cons_en": "Slow, limited tracking, higher loss rate"
+    },
+    {
+      "name": "专线物流",
+      "name_en": "Special Line (YunExpress/4PX)",
+      "min_cost": "¥80-120/kg",
+      "days": "7-15天",
+      "best_for": "标准跨境包裹、性价比首选",
+      "pros": "时效稳定、全程跟踪、可走带电产品",
+      "cons": "比小包贵",
+      "days_en": "7-15 days",
+      "best_for_en": "Standard cross-border parcels; best value",
+      "pros_en": "Reliable timing, full tracking, accepts battery items",
+      "cons_en": "More expensive than small packet"
+    },
+    {
+      "name": "国际快递",
+      "name_en": "DHL/FedEx/UPS",
+      "min_cost": "¥200+/kg",
+      "days": "3-7天",
+      "best_for": "高货值、急件、样品",
+      "pros": "最快、最稳、门到门",
+      "cons": "贵、体积重计费",
+      "days_en": "3-7 days",
+      "best_for_en": "High value, urgent items, samples",
+      "pros_en": "Fastest and most reliable, door to door",
+      "cons_en": "Expensive, charges by volumetric weight"
+    },
+    {
+      "name": "海外仓",
+      "name_en": "Overseas Warehouse (FBA/3PL)",
+      "min_cost": "头程¥30-50/kg + 仓储+尾程",
+      "days": "本地1-3天达",
+      "best_for": "爆款、复购品、需要快速配送",
+      "pros": "本地配送快、转化率高、可退标",
+      "cons": "压货风险、仓储费、需提前备货",
+      "days_en": "1-3 days local delivery",
+      "best_for_en": "Best sellers, repeat purchases, fast delivery needed",
+      "pros_en": "Fast local delivery, higher conversion, supports returns",
+      "cons_en": "Inventory risk, storage fees, requires stocking ahead"
+    },
+    {
+      "name": "平台官方物流",
+      "name_en": "Platform Logistics (FBT/Shopee Logistics)",
+      "min_cost": "按平台报价",
+      "days": "5-10天",
+      "best_for": "新手、不想自己对接物流",
+      "pros": "平台背书、纠纷处理简单",
+      "cons": "价格不透明、灵活性低",
+      "days_en": "5-10 days",
+      "best_for_en": "Beginners who don't want to arrange shipping",
+      "pros_en": "Backed by the platform, simpler disputes",
+      "cons_en": "Opaque pricing, less flexible"
+    }
+  ],
+  "domestic_shipping": [
+    {
+      "name": "三通一达",
+      "cost": "¥3-5/单",
+      "best": "常规包裹",
+      "best_en": "Regular parcels",
+      "name_en": "YTO/STO/ZTO/Yunda"
+    },
+    {
+      "name": "顺丰",
+      "cost": "¥12-23/单",
+      "best": "高客单、急件",
+      "best_en": "High-value or urgent items",
+      "name_en": "SF Express"
+    },
+    {
+      "name": "京东物流",
+      "cost": "¥8-15/单",
+      "best": "京东平台订单",
+      "best_en": "Orders on JD",
+      "name_en": "JD Logistics"
+    },
+    {
+      "name": "极兔",
+      "cost": "¥2-4/单",
+      "best": "拼多多低价单",
+      "best_en": "Low-price Pinduoduo orders",
+      "name_en": "J&T Express"
+    }
+  ],
+  "calculator_note": "运费根据重量、体积、目的地变化，以上为参考价格，实际以物流公司报价为准",
+  "calculator_note_en": "Shipping rates vary by weight, volume, and destination. The figures above are estimates; confirm with the logistics company."
+}

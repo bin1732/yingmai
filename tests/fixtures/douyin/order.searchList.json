@@ -1,0 +1,63 @@
+{
+  "code": 10000,
+  "msg": "success",
+  "sub_code": "",
+  "sub_msg": "",
+  "data": {
+    "total": 2,
+    "order_list": [
+      {
+        "order_id": "39000000000012345",
+        "shop_id": "70012345",
+        "order_status": 2,
+        "pay_amount": 250,
+        "post_amount": 6,
+        "create_time": "2026-10-01 10:00:00",
+        "update_time": "2026-10-01 10:05:00",
+        "receiver_name": "张三",
+        "receiver_tel": "13800000000",
+        "province_name": "广东省",
+        "city_name": "深圳市",
+        "town_name": "南山区",
+        "detail_address": "科技园南路 100 号",
+        "product_order_detail": [
+          {
+            "item_id": "700000000001",
+            "spec_id": "900001",
+            "out_sku_id": "EARBUD-W",
+            "item_name": "无线蓝牙耳机 Pro",
+            "price": 125,
+            "item_num": 2,
+            "pay_amount": 250
+          }
+        ]
+      },
+      {
+        "order_id": "39000000000012346",
+        "shop_id": "70012345",
+        "order_status": 4,
+        "pay_amount": 199,
+        "post_amount": 0,
+        "create_time": "2026-09-28 09:00:00",
+        "update_time": "2026-09-30 18:00:00",
+        "receiver_name": "李四",
+        "receiver_tel": "13900000000",
+        "province_name": "广东省",
+        "city_name": "广州市",
+        "town_name": "天河区",
+        "detail_address": "体育西路 200 号",
+        "product_order_detail": [
+          {
+            "item_id": "700000000002",
+            "spec_id": "0",
+            "out_sku_id": "CASE-BLACK",
+            "item_name": "简约手机壳",
+            "price": 199,
+            "item_num": 1,
+            "pay_amount": 199
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "success": true,
+  "result": {
+    "totalCount": 128,
+    "page": 1,
+    "offerList": [
+      {
+        "offerId": "701234567890",
+        "subject": "无线蓝牙耳机 入耳式主动降噪 长续航",
+        "imgUrl": "https://cbu01.alicdn.com/img/ibank/earbuds-main.jpg",
+        "priceRange": { "priceFloor": 12.5, "priceCeiling": 25.9 },
+        "moq": 2,
+        "isOnePsale": true,
+        "sellerCompanyName": "深圳市优品电子有限公司",
+        "gmtModified": "2026-09-20 10:00:00"
+      },
+      {
+        "offerId": "709876543210",
+        "subject": "便携蓝牙音箱 迷你防水小音响",
+        "imgUrl": "https://cbu01.alicdn.com/img/ibank/speaker-main.jpg",
+        "priceRange": { "priceFloor": 35.0, "priceCeiling": 35.0 },
+        "moq": 1,
+        "isOnePsale": false,
+        "sellerCompanyName": "广州声学科技有限公司",
+        "gmtModified": "2026-09-18 09:30:00"
+      }
+    ]
+  }
+}

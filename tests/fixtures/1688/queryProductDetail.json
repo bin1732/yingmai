@@ -1,0 +1,37 @@
+{
+  "success": true,
+  "result": {
+    "offerId": "701234567890",
+    "subject": "无线蓝牙耳机 入耳式主动降噪 长续航",
+    "imgUrl": "https://cbu01.alicdn.com/img/ibank/earbuds-main.jpg",
+    "sellerCompanyName": "深圳市优品电子有限公司",
+    "gmtModified": "2026-09-20 10:00:00",
+    "priceRangeList": [
+      { "price": 12.5, "quantity": 2 },
+      { "price": 11.0, "quantity": 100 },
+      { "price": 9.5, "quantity": 500 }
+    ],
+    "skuInfo": {
+      "skuList": [
+        {
+          "skuId": "S1001",
+          "skuCode": "EB-WHITE",
+          "attributes": [
+            { "attrName": "颜色", "attrValue": "白色" }
+          ],
+          "price": 12.5,
+          "channelInventoryQuantity": 100
+        },
+        {
+          "skuId": "S1002",
+          "skuCode": "EB-BLACK",
+          "attributes": [
+            { "attrName": "颜色", "attrValue": "黑色" }
+          ],
+          "price": 12.5,
+          "channelInventoryQuantity": 50
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "item_list": [
+    {
+      "item_id": 2500139861,
+      "item_name": "Wireless Earbuds Pro",
+      "item_status": "NORMAL",
+      "has_model": false,
+      "item_sku": "EARBUD-01",
+      "price_info": {
+        "current_price": 25.99,
+        "original_price": 32.00,
+        "currency": "SGD"
+      },
+      "stock_info_v2": {
+        "summary_info": {
+          "total_reserved_stock": 2,
+          "total_available_stock": 25
+        },
+        "seller_stock": [
+          { "location_id": "IDZ", "stock": 25 }
+        ]
+      },
+      "image": { "image_url_list": ["https://cf.shopee.sg/img/demo-earbuds.jpg"] },
+      "update_time": 1759700000
+    },
+    {
+      "item_id": 2500139862,
+      "item_name": "Cotton T-Shirt",
+      "item_status": "NORMAL",
+      "has_model": true,
+      "item_sku": "",
+      "price_info": {
+        "current_price": 12.50,
+        "original_price": 15.00,
+        "currency": "SGD"
+      },
+      "stock_info_v2": {
+        "summary_info": {
+          "total_reserved_stock": 0,
+          "total_available_stock": 30
+        }
+      },
+      "image": { "image_url_list": ["https://cf.shopee.sg/img/demo-tshirt.jpg"] },
+      "update_time": 1759700100
+    }
+  ]
+}

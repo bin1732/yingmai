@@ -1,0 +1,21 @@
+{
+  "result": 1,
+  "data": {
+    "total": 1,
+    "item_list": [
+      {
+        "item_id": "600001",
+        "name": "无线蓝牙耳机",
+        "price": 25.99,
+        "stock": 35,
+        "status": 1,
+        "thumbnail_url": "https://cdn.kwaixiaodian.com/earbuds-main.jpg",
+        "update_time": "2026-10-01 10:00:00",
+        "skus": [
+          { "sku_id": "800001", "outer_sku_id": "EARBUD-W", "price": 125, "stock": 25 },
+          { "sku_id": "800002", "outer_sku_id": "EARBUD-B", "price": 125, "stock": 10 }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "aliexpress_postproduct_redefining_findproductinfolistquery_response": {
+    "result": {
+      "aeop_a_e_product_display_d_t_o_list": {
+        "aeop_ae_product_display_sample_dto": [
+          {
+            "product_id": 32972979985,
+            "subject": "Man's Waistcoat Unit.",
+            "currency_code": "USD",
+            "product_min_price": "25.99",
+            "product_max_price": "35.99",
+            "gmt_create": "2026-09-01 10:00:00",
+            "gmt_modified": "2026-09-20 12:30:00",
+            "image_u_r_ls": "http://g01.a.alicdn.com/kf/HTB13GKLJXXXXXbYaXXXq6xXFXXXi.jpg;http://g02.a.alicdn.com/kf/HTB1DkaWJXXXXXb6XFXXq6xXFXXXp.jpg",
+            "owner_member_id": "cn10001234",
+            "src": "isv"
+          },
+          {
+            "product_id": 32972979986,
+            "subject": "Wireless Earbuds Pro",
+            "currency_code": "USD",
+            "product_min_price": "12.50",
+            "product_max_price": "12.50",
+            "gmt_create": "2026-08-15 09:00:00",
+            "gmt_modified": "2026-09-21 08:00:00",
+            "image_u_r_ls": "http://g03.a.alicdn.com/kf/HTB1QhORJXXXXXbiXVXXq6xXFXXXx.jpg",
+            "owner_member_id": "cn10001234",
+            "src": ""
+          }
+        ]
+      },
+      "current_page": 1,
+      "product_count": 2,
+      "total_page": 1
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "jingdong_item_list_get_responce": {
+    "code": 0,
+    "wareList": [
+      {
+        "wareId": 10000001,
+        "name": "无线蓝牙耳机 Pro",
+        "jdPrice": 125.00,
+        "stockNumber": 100,
+        "img": "https://img14.360buyimg.com/n1/earbuds-main.jpg",
+        "modified": "2026-09-20 12:30:00",
+        "skus": [
+          { "skuId": 200001, "price": 125.00, "stock": 25, "outerSkuId": "EARBUD-WHITE" },
+          { "skuId": 200002, "price": 129.00, "stock": 30, "outerSkuId": "EARBUD-BLACK" }
+        ]
+      },
+      {
+        "wareId": 10000002,
+        "name": "纯棉短袖 T 恤",
+        "jdPrice": 59.90,
+        "stockNumber": 50,
+        "img": "https://img14.360buyimg.com/n1/tshirt-main.jpg",
+        "modified": "2026-09-21 08:00:00"
+      }
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "_note": "findaeproductbyid 响应形状：外层信封按 <method>_response.result；SKU 列表字段级正文未在公开文档抓到（R6），本样例按 AeopSkuDto 命名与 extractSkus 防御式扫描构造，精确嵌套需登录控制台抓真实报文补全。",
+  "aliexpress_postproduct_redefining_findaeproductbyid_response": {
+    "result": {
+      "product_id": 32972979985,
+      "subject": "Man's Waistcoat Unit.",
+      "currency_code": "USD",
+      "product_status_type": "onsale",
+      "aeop_sku_d_t_o_list": {
+        "aeop_sku_dto": [
+          {
+            "sku_id": "14:200003699;5:100014064",
+            "sku_code": "VEST-M-RED",
+            "sku_quantity": 25,
+            "sku_price": "25.99",
+            "currency_code": "USD",
+            "sku_attrs": [
+              { "attr_name": "Color", "attr_value": "Red" },
+              { "attr_name": "Size", "attr_value": "M" }
+            ]
+          },
+          {
+            "sku_id": "14:200003699;5:100014065",
+            "sku_code": "VEST-L-BLUE",
+            "sku_quantity": 10,
+            "sku_price": "25.99",
+            "currency_code": "USD",
+            "sku_attrs": [
+              { "attr_name": "Color", "attr_value": "Blue" },
+              { "attr_name": "Size", "attr_value": "L" }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# Build output and packaged artifacts
+release/
+dist/
+build/app.7z
+build/*.exe
+
+# Large bundled model files (use `npm run setup` or the prebuilt packages)
+models/**/*.gguf
+models/**/*.onnx
+
+# Runtime / user data
+*.db
+**/盈脉数据/
+**/YingMai-Portable/
+*.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

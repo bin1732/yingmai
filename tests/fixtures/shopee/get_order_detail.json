@@ -1,0 +1,68 @@
+{
+  "error": "",
+  "message": "",
+  "response": {
+    "order_list": [
+      {
+        "order_sn": "201218V2Y6E59M",
+        "region": "TW",
+        "currency": "TWD",
+        "order_status": "READY_TO_SHIP",
+        "buyer_username": "buyer_john",
+        "total_amount": 825.00,
+        "estimated_shipping_fee": 60.00,
+        "create_time": 1759600000,
+        "update_time": 1759600500,
+        "recipient_address": {
+          "name": "John Buyer",
+          "phone": "0912345678",
+          "full_address": "No. 100, Sec. 1, Zhongxiao E. Rd",
+          "state": "Taipei City",
+          "city": "Da'an District",
+          "zipcode": "106",
+          "country": "TW"
+        },
+        "item_list": [
+          {
+            "item_id": 2500139861,
+            "model_id": 0,
+            "model_sku": "EARBUD-01",
+            "model_name": "Wireless Earbuds Pro",
+            "purchase_price": 765.00,
+            "purchase_quantity": 1
+          }
+        ]
+      },
+      {
+        "order_sn": "201218V2W2SG1E",
+        "region": "TW",
+        "currency": "TWD",
+        "order_status": "SHIPPED",
+        "buyer_username": "buyer_lisa",
+        "total_amount": 375.00,
+        "estimated_shipping_fee": 0,
+        "create_time": 1759601000,
+        "update_time": 1759602000,
+        "recipient_address": {
+          "name": "Lisa Wang",
+          "phone": "0922333444",
+          "full_address": "No. 5, Sec. 2, Nanjing E. Rd",
+          "state": "Taipei City",
+          "city": "Zhongshan District",
+          "zipcode": "104",
+          "country": "TW"
+        },
+        "item_list": [
+          {
+            "item_id": 2500139862,
+            "model_id": 90001,
+            "model_sku": "TSHIRT-M-RED",
+            "model_name": "Cotton T-Shirt",
+            "purchase_price": 187.50,
+            "purchase_quantity": 2
+          }
+        ]
+      }
+    ]
+  }
+}

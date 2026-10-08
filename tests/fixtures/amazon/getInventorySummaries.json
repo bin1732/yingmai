@@ -1,0 +1,26 @@
+{
+  "payload": {
+    "granularity": { "granularityType": "Marketplace", "granularityId": "ATVPDKIKX0DER" },
+    "inventorySummaries": [
+      {
+        "asin": "B0EXAMPLE01",
+        "fnSku": "X00EXAMPLE1",
+        "sellerSku": "SKU-EARBUD-01",
+        "condition": "New Item",
+        "inventoryDetails": { "fulfillableQuantity": 20, "inboundWorkingQuantity": 0, "inboundShippedQuantity": 0 },
+        "productName": "Wireless Earbuds",
+        "totalQuantity": 20
+      },
+      {
+        "asin": "B0EXAMPLE03",
+        "fnSku": "X00EXAMPLE3",
+        "sellerSku": "SKU-CASE-03",
+        "condition": "New Item",
+        "inventoryDetails": { "fulfillableQuantity": 8, "unfulfillableQuantity": { "totalUnfulfillableQuantity": 1 } },
+        "productName": "Phone Case",
+        "totalQuantity": 9
+      }
+    ]
+  },
+  "pagination": { "nextToken": null }
+}

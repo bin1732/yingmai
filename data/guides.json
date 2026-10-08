@@ -1,0 +1,452 @@
+{
+  "domestic": {
+    "title_zh": "国内电商新手入行指引",
+    "title_en": "Domestic E-commerce New Seller Guide",
+    "steps": [
+      {
+        "phase": "准备阶段",
+        "phase_en": "Preparation",
+        "order": 1,
+        "title_zh": "准备身份证与银行卡",
+        "title_en": "Prepare ID & Bank Card",
+        "details_zh": [
+          "准备本人有效期内身份证（年满16周岁）",
+          "办理一张本人名下银行卡（建议四大行或股份制银行）",
+          "完成支付宝/微信实名认证",
+          "如需做企业店，提前注册个体工商户或公司营业执照"
+        ],
+        "details_en": [
+          "Have a valid government ID (must be 16 or older)",
+          "Get a bank card in your own name (a major bank is recommended)",
+          "Complete real-name verification for Alipay / WeChat",
+          "For a business store, register a sole proprietorship or company license in advance"
+        ]
+      },
+      {
+        "phase": "准备阶段",
+        "phase_en": "Preparation",
+        "order": 2,
+        "title_zh": "选定平台与类目",
+        "title_en": "Choose Platform & Category",
+        "details_zh": [
+          "新手建议从淘宝/拼多多起步（个人即可开店）",
+          "有内容能力选抖音/快手电商",
+          "确定类目：从自己熟悉或有货源优势的领域入手",
+          "查看该类目是否需要特殊资质（如食品经营许可证、化妆品备案等）"
+        ],
+        "details_en": [
+          "Beginners should start with Taobao or Pinduoduo (individuals can open a store)",
+          "Choose Douyin or Kuaishou if you are good at content",
+          "Pick a category you know or where you have a supply advantage",
+          "Check whether the category needs special qualifications (e.g. food license, cosmetics filing)"
+        ]
+      },
+      {
+        "phase": "开店阶段",
+        "phase_en": "Store Setup",
+        "order": 3,
+        "title_zh": "注册开店",
+        "title_en": "Register & Open Store",
+        "details_zh": [
+          "下载对应平台卖家APP或访问卖家中心",
+          "使用手机号注册账号",
+          "提交身份证正反面+人脸识别",
+          "缴纳消费者保障保证金（淘宝1000元，可用30元保险替代）",
+          "设置店铺名称、Logo、简介"
+        ],
+        "details_en": [
+          "Download the platform's seller app or visit the seller center",
+          "Register with your phone number",
+          "Submit the front and back of your ID and complete face verification",
+          "Pay the buyer-protection deposit (Taobao 1,000 yuan, or a ~30-yuan insurance alternative)",
+          "Set your store name, logo, and description"
+        ]
+      },
+      {
+        "phase": "开店阶段",
+        "phase_en": "Store Setup",
+        "order": 4,
+        "title_zh": "货源准备",
+        "title_en": "Source Products",
+        "details_zh": [
+          "无货源模式：1688一键代发（新手推荐试水）",
+          "一件代发：联系供应商确认代发政策和质量",
+          "自采模式：义乌/广州/杭州等批发市场实地采购",
+          "小批量试单：先拿样确认质量，再小批量上架",
+          "留存采购凭证和供应商联系方式"
+        ],
+        "details_en": [
+          "No-inventory model: dropship from 1688 (recommended for beginners)",
+          "Dropshipping: confirm the supplier's policy and product quality",
+          "Self-purchase: buy in person at wholesale markets such as Yiwu, Guangzhou, or Hangzhou",
+          "Order small samples first to verify quality, then list in small batches",
+          "Keep purchase records and supplier contacts"
+        ]
+      },
+      {
+        "phase": "上架阶段",
+        "phase_en": "Listing",
+        "order": 5,
+        "title_zh": "商品上架",
+        "title_en": "List Products",
+        "details_zh": [
+          "拍摄清晰主图（白底图+场景图），首图决定点击率",
+          "撰写标题：核心词+属性词+长尾词（参考同行高销量标题）",
+          "填写详细属性（影响搜索匹配）",
+          "设置合理价格（参考同行均价，新店可略低引流）",
+          "设置运费模板（偏远地区加价或不发货）",
+          "上架10-20个SKU建立店铺基础"
+        ],
+        "details_en": [
+          "Take clear main images (white background plus lifestyle shots); the first image drives click rate",
+          "Write titles: core words + attribute words + long-tail words (study top-selling peers)",
+          "Fill in detailed attributes (they affect search matching)",
+          "Set a reasonable price (around the peer average; new stores can price slightly lower)",
+          "Set shipping templates (add a surcharge for remote regions or exclude them)",
+          "List 10-20 SKUs to build a basic store"
+        ]
+      },
+      {
+        "phase": "运营阶段",
+        "phase_en": "Operations",
+        "order": 6,
+        "title_zh": "破零与基础销量",
+        "title_en": "First Sales & Traction",
+        "details_zh": [
+          "通知亲友下单（真实发货，不刷单）",
+          "参加平台新人扶持活动",
+          "设置新店优惠券（满减/无门槛）",
+          "优化标题和主图（根据点击率数据调整）",
+          "认真回复每一个咨询（客服响应速度影响权重）"
+        ],
+        "details_en": [
+          "Ask friends and family to place genuine orders (ship real products; never fake orders)",
+          "Join the platform's new-seller support programs",
+          "Set new-store coupons (spend-and-save or no-threshold)",
+          "Optimize titles and main images based on click-rate data",
+          "Reply to every inquiry promptly (response speed affects ranking)"
+        ]
+      },
+      {
+        "phase": "运营阶段",
+        "phase_en": "Operations",
+        "order": 7,
+        "title_zh": "流量获取",
+        "title_en": "Traffic Acquisition",
+        "details_zh": [
+          "免费流量：优化搜索排名（标题、属性、销量、好评率）",
+          "内容流量：发布买家秀、小红书种草、短视频",
+          "付费流量：直通车/万相台（日预算50-100元起步测试）",
+          "活动流量：报名平台天天特卖、类目活动",
+          "私域流量：引导买家关注店铺、加入粉丝群"
+        ],
+        "details_en": [
+          "Free traffic: improve search ranking (titles, attributes, sales, positive-review rate)",
+          "Content traffic: post buyer photos, Xiaohongshu posts, and short videos",
+          "Paid traffic: start with 50-100 yuan per day to test sponsored ads",
+          "Event traffic: sign up for flash sales and category events",
+          "Private traffic: encourage buyers to follow the store and join fan groups"
+        ]
+      },
+      {
+        "phase": "盈利阶段",
+        "phase_en": "Profit",
+        "order": 8,
+        "title_zh": "优化与盈利",
+        "title_en": "Optimize & Profit",
+        "details_zh": [
+          "分析数据：哪些SKU卖得好，加大推广；滞销品及时清仓",
+          "提升复购：设置会员体系、定期上新、老客优惠券",
+          "控制成本：谈判供应商降价、优化快递费",
+          "合规经营：不刷单、不虚假宣传、及时处理售后",
+          "月销稳定后考虑扩大SKU或升级店铺类型"
+        ],
+        "details_en": [
+          "Analyze data: push best-selling SKUs and clear slow movers",
+          "Increase repeat purchases: membership, regular new arrivals, returning-customer coupons",
+          "Control costs: negotiate lower supplier prices and optimize shipping fees",
+          "Operate compliantly: no fake orders, no false claims, handle after-sales promptly",
+          "Once monthly sales stabilize, expand SKUs or upgrade the store type"
+        ]
+      }
+    ]
+  },
+  "crossborder": {
+    "title_zh": "跨境电商新手入行指引",
+    "title_en": "Cross-border E-commerce New Seller Guide",
+    "steps": [
+      {
+        "phase": "准备阶段",
+        "phase_en": "Preparation",
+        "order": 1,
+        "title_zh": "准备证件与资金",
+        "title_en": "Prepare Documents & Funds",
+        "details_zh": [
+          "企业营业执照（个体工商户或公司，建议有限公司）",
+          "法人身份证正反面",
+          "双币信用卡（Visa/Mastercard，用于平台扣费）",
+          "跨境收款账户（Payoneer/WorldFirst/万里汇）",
+          "启动资金建议2-5万元（含保证金、首批货、物流、广告）"
+        ],
+        "details_en": [
+          "Business license (sole proprietorship or company; an LLC is recommended)",
+          "Front and back of the legal representative's ID",
+          "Dual-currency credit card (Visa/Mastercard) for platform charges",
+          "Cross-border payment account (Payoneer / WorldFirst)",
+          "Recommended starting capital: 20,000-50,000 yuan (deposit, first inventory, shipping, ads)"
+        ]
+      },
+      {
+        "phase": "准备阶段",
+        "phase_en": "Preparation",
+        "order": 2,
+        "title_zh": "选定平台与目标市场",
+        "title_en": "Choose Platform & Market",
+        "details_zh": [
+          "新手推荐：Shopee（门槛低、免前3月佣金）或TikTok Shop（流量红利）",
+          "有一定资金和经验：Amazon（利润高、规则严）",
+          "有技术和营销能力：Shopify独立站",
+          "研究目标市场：语言、消费习惯、节日、物流时效要求",
+          "查看目标站点的禁止销售品类和认证要求"
+        ],
+        "details_en": [
+          "Recommended for beginners: Shopee (low barrier, no commission for the first 3 months) or TikTok Shop (traffic growth)",
+          "With some capital and experience: Amazon (higher profit, strict rules)",
+          "With technical and marketing skills: a Shopify standalone store",
+          "Study the target market: language, shopping habits, holidays, delivery expectations",
+          "Check prohibited categories and certification requirements for the target site"
+        ]
+      },
+      {
+        "phase": "开店阶段",
+        "phase_en": "Store Setup",
+        "order": 3,
+        "title_zh": "注册店铺",
+        "title_en": "Register Store",
+        "details_zh": [
+          "访问对应平台跨境卖家注册页面",
+          "提交营业执照、法人身份证、信用卡信息",
+          "完成视频验证或电话验证",
+          "缴纳站点保证金（Shopee免、Amazon$39.99/月、TikTok $500-2000）",
+          "绑定跨境收款账户",
+          "设置店铺信息（英文/当地语言）"
+        ],
+        "details_en": [
+          "Visit the platform's cross-border seller registration page",
+          "Submit your business license, legal rep ID, and credit card details",
+          "Complete video or phone verification",
+          "Pay the site deposit (Shopee free, Amazon $39.99/month, TikTok $500-2,000)",
+          "Link your cross-border payment account",
+          "Set up store information in English or the local language"
+        ]
+      },
+      {
+        "phase": "选品阶段",
+        "phase_en": "Product Research",
+        "order": 4,
+        "title_zh": "选品与供应链",
+        "title_en": "Product Sourcing",
+        "details_zh": [
+          "使用平台数据分析工具（卖家精灵/JS/平台前台数据）",
+          "选择轻小件（物流成本低）、非易碎、非季节性产品",
+          "避开品牌垄断品类（如手机配件）和强认证品类（如电子产品带CE/FCC）",
+          "1688采购或义乌市场拿货",
+          "小批量试发（50-100件测试市场反应）",
+          "确认产品在目标市场无侵权风险（商标/专利查询）"
+        ],
+        "details_en": [
+          "Use platform analytics tools (SellerSprite / Helium 10 / front-end data)",
+          "Choose light, small, non-fragile, non-seasonal products (lower shipping cost)",
+          "Avoid brand-dominated categories (e.g. phone accessories) and certification-heavy ones (CE/FCC)",
+          "Source from 1688 or the Yiwu market",
+          "Test with a small batch (50-100 units) to gauge market response",
+          "Confirm no trademark or patent infringement risk in the target market"
+        ]
+      },
+      {
+        "phase": "上架阶段",
+        "phase_en": "Listing",
+        "order": 5,
+        "title_zh": "Listing上架",
+        "title_en": "List Products",
+        "details_zh": [
+          "产品图片：白底主图+场景图+细节图+尺寸图（至少6张）",
+          "标题：核心关键词前置，包含品牌名+产品名+核心属性",
+          "描述：英文撰写，突出卖点，符合当地语言习惯",
+          "定价：计算 landed cost（产品+头程+平台费+广告+退款）后定价",
+          "设置库存数量（初期不要设太多）",
+          "选择物流方式：自发货或平台仓（FBA/SFP等）"
+        ],
+        "details_en": [
+          "Images: white-background main image plus lifestyle, detail, and size images (at least 6)",
+          "Title: lead with core keywords, including brand, product name, and key attributes",
+          "Description: write in natural English (or the local language), emphasizing benefits",
+          "Price: calculate landed cost (product + first-mile + platform fees + ads + refunds) first",
+          "Set modest inventory levels at the start",
+          "Choose a fulfillment method: self-ship or a platform warehouse (FBA/SFP)"
+        ]
+      },
+      {
+        "phase": "运营阶段",
+        "phase_en": "Operations",
+        "order": 6,
+        "title_zh": "物流与履约",
+        "title_en": "Logistics & Fulfillment",
+        "details_zh": [
+          "自发货：对接专线物流（云途/燕文/4PX），7-15天送达",
+          "平台仓：批量发货至海外仓，2-5天送达，转化率更高",
+          "打印面单：按平台要求格式打印",
+          "及时上传追踪号（延迟会影响店铺绩效）",
+          "监控物流异常，及时处理丢件/破损"
+        ],
+        "details_en": [
+          "Self-fulfillment: use dedicated line logistics (YunTu / YanWen / 4PX), delivery in 7-15 days",
+          "Platform warehouse: ship in bulk to an overseas warehouse, delivery in 2-5 days with higher conversion",
+          "Print shipping labels in the platform's required format",
+          "Upload tracking numbers promptly (delays hurt account performance)",
+          "Monitor shipping exceptions and handle lost or damaged packages"
+        ]
+      },
+      {
+        "phase": "运营阶段",
+        "phase_en": "Operations",
+        "order": 7,
+        "title_zh": "推广与优化",
+        "title_en": "Promotion & Optimization",
+        "details_zh": [
+          "平台站内广告：SP广告/展示广告（日预算$10-20起步）",
+          "站外引流：Deal站点（Slickdeals/Dealmoon）、社交媒体",
+          "Request Review：对已签收订单请求评价",
+          "监控转化率和ACOS，优化关键词出价",
+          "分析竞品价格和评论，调整自身Listing"
+        ],
+        "details_en": [
+          "On-site ads: Sponsored Products or display ads (start with $10-20 per day)",
+          "Off-site traffic: deal sites (Slickdeals / DealMoon) and social media",
+          "Use Request a Review for delivered orders",
+          "Monitor conversion rate and ACOS, and optimize keyword bids",
+          "Analyze competitor prices and reviews to refine your listing"
+        ]
+      },
+      {
+        "phase": "盈利阶段",
+        "phase_en": "Profit",
+        "order": 8,
+        "title_zh": "扩张与合规",
+        "title_en": "Scale & Compliance",
+        "details_zh": [
+          "跑通单品类后，扩展相关品类（关联销售）",
+          "优化供应链：谈更低采购价、拼柜发货降低头程",
+          "品牌备案：注册商标进行品牌备案，保护Listing",
+          "合规经营：不刷评、不侵权、不虚假宣传、及时处理A-to-Z索赔",
+          "关注平台政策变化（每月查看卖家中心通知）",
+          "盈利后考虑多站点扩张或多平台布局"
+        ],
+        "details_en": [
+          "After one category works, expand into related products (cross-selling)",
+          "Optimize the supply chain: negotiate lower prices and consolidate shipments to cut first-mile cost",
+          "Register your trademark and complete brand registry to protect listings",
+          "Operate compliantly: no fake reviews, no infringement, no false claims, handle A-to-Z claims promptly",
+          "Watch policy changes (check seller-center notices every month)",
+          "Once profitable, expand to more sites or platforms"
+        ]
+      }
+    ]
+  },
+  "entity_types": {
+    "title_zh": "不同经营主体对照",
+    "title_en": "Seller Entity Types Compared",
+    "intro_zh": "开店前先确定经营主体，不同主体在证照、店铺类型、发票税务和可入驻平台上存在差异。",
+    "intro_en": "Choose your business entity before opening a store; entities differ in documents, store types, invoicing and tax, and eligible platforms.",
+    "types": [
+      {
+        "name_zh": "个人（自然人）",
+        "name_en": "Individual",
+        "docs_zh": "本人身份证、本人银行卡、支付宝或微信实名认证，无需营业执照",
+        "docs_en": "Your own ID, a bank card in your name, and verified Alipay or WeChat; no business license needed",
+        "stores_zh": "可开个人店，不能开天猫、京东自营等企业或品牌店铺",
+        "stores_en": "Can open an individual store, but not business or brand stores such as Tmall or JD self-operated",
+        "tax_zh": "以个人身份经营，通常不能自行开具增值税发票，可按规定申请代开，按个人经营所得申报",
+        "tax_en": "Operates as a person, generally cannot issue VAT invoices directly and applies for issued-on-request invoices; reports personal business income",
+        "platforms_zh": "淘宝、拼多多等支持个人开店的国内平台；多数跨境平台要求企业资质",
+        "platforms_en": "Domestic platforms that allow individuals, such as Taobao and Pinduoduo; most cross-border platforms require a business entity",
+        "deposit_zh": "缴纳消费者保障保证金（如淘宝1000元，可用约30元保险替代），部分企业店活动无法参加",
+        "deposit_en": "Pays the buyer-protection deposit (e.g. Taobao 1,000 yuan or a ~30-yuan insurance alternative); some business-store programs are unavailable",
+        "fit_zh": "适合兼职试水、小规模起步",
+        "fit_en": "Best for part-time trials and small-scale starts"
+      },
+      {
+        "name_zh": "个体工商户",
+        "name_en": "Sole Proprietorship",
+        "docs_zh": "个体工商户营业执照、经营者身份证、经营者银行卡或对公账户",
+        "docs_en": "A sole-proprietorship business license, the operator's ID, and the operator's bank card or a business account",
+        "stores_zh": "可开企业店或个体店，部分类目可入驻天猫、京东及抖音、快手企业店",
+        "stores_en": "Can open a business or sole-proprietor store; some categories allow Tmall, JD, Douyin or Kuaishou business stores",
+        "tax_zh": "可申领发票，作为小规模纳税人开具增值税普通发票或申请代开专用发票，按经营所得纳税并可享小规模纳税人优惠",
+        "tax_en": "Can obtain invoices and, as a small-scale taxpayer, issue ordinary VAT invoices or request special ones; pays business income tax and may use small-scale taxpayer benefits",
+        "platforms_zh": "国内主流平台基本可入驻，多数跨境平台接受（如 Shopee、TikTok Shop、速卖通）",
+        "platforms_en": "Eligible for most domestic platforms and accepted by many cross-border platforms such as Shopee, TikTok Shop and AliExpress",
+        "deposit_zh": "按企业店标准缴纳，部分类目与个人店存在差异",
+        "deposit_en": "Pays according to business-store standards; some categories differ from individual stores",
+        "fit_zh": "适合正式经营、有稳定订单、需要开票的卖家",
+        "fit_en": "Best for sellers running a real business with steady orders who need to issue invoices"
+      },
+      {
+        "name_zh": "企业（有限公司等）",
+        "name_en": "Company (e.g. LLC)",
+        "docs_zh": "公司营业执照、法定代表人身份证、对公银行账户并完成税务登记",
+        "docs_en": "A company business license, the legal representative's ID, a corporate bank account and completed tax registration",
+        "stores_zh": "可开企业店、旗舰店或专卖店（需自有商标或品牌授权），可入驻天猫、京东等",
+        "stores_en": "Can open business, flagship or specialty stores (with a trademark or brand authorization), including Tmall and JD",
+        "tax_zh": "可登记为一般纳税人或小规模纳税人，可开具增值税专用发票、抵扣进项，按企业纳税申报",
+        "tax_en": "Can register as a general or small-scale taxpayer, issue special VAT invoices, deduct input tax and file corporate tax",
+        "platforms_zh": "国内主流平台与跨境主流平台均可入驻（如 Amazon、Shopee、TikTok Shop、Shopify、eBay）",
+        "platforms_en": "Eligible for major domestic and cross-border platforms such as Amazon, Shopee, TikTok Shop, Shopify and eBay",
+        "deposit_zh": "按平台与类目缴纳，天猫、品牌旗舰店等保证金通常更高",
+        "deposit_en": "Pays according to platform and category; Tmall and flagship stores usually require higher deposits",
+        "fit_zh": "适合规模化、品牌化、团队化经营",
+        "fit_en": "Best for scaled, brand-focused, team-based operations"
+      },
+      {
+        "name_zh": "工作室",
+        "name_en": "Studio",
+        "docs_zh": "通常登记为个体工商户或个人独资企业，取得相应营业执照与经营者身份证",
+        "docs_en": "Usually registered as a sole proprietorship or individual-funded enterprise, with the matching license and the operator's ID",
+        "stores_zh": "店铺类型与个体工商户一致；多账号、多店铺运营须符合平台账号规则",
+        "stores_en": "Store types match a sole proprietorship; running multiple accounts or stores must follow platform account rules",
+        "tax_zh": "按个体工商户或个人独资企业的经营所得纳税并申领发票",
+        "tax_en": "Pays business income tax and obtains invoices as a sole proprietorship or individual-funded enterprise",
+        "platforms_zh": "以抖音、快手、小红书等内容电商，以及代运营、内容服务为主",
+        "platforms_en": "Focuses on content commerce such as Douyin, Kuaishou and Xiaohongshu, plus managed operations and content services",
+        "deposit_zh": "与个体工商户一致，具体以入驻平台与类目为准",
+        "deposit_en": "Same as a sole proprietorship, subject to the platform and category",
+        "fit_zh": "适合内容创作、直播、代运营等小团队",
+        "fit_en": "Best for small teams doing content creation, live streaming or managed operations"
+      }
+    ]
+  },
+  "common_mistakes": {
+    "title_zh": "新手常见错误",
+    "title_en": "Common Beginner Mistakes",
+    "items_zh": [
+      "盲目铺货不做选品分析，导致大量滞销",
+      "定价只算产品成本，忘了平台佣金、广告费、退款损失",
+      "图片质量差，主图不清晰，点击率极低",
+      "一开始就大量备货，资金链断裂",
+      "不研究平台规则，违规被扣分/封店",
+      "客服响应慢，流失订单",
+      "刷单/刷评，被平台检测后封店",
+      "忽视售后，差评累积影响排名"
+    ],
+    "items_en": [
+      "Listing hundreds of products without research, leaving large amounts of dead stock",
+      "Pricing only against product cost and forgetting platform fees, ads, and refund losses",
+      "Poor, unclear main images that lead to very low click rates",
+      "Stocking heavily at the start and running out of cash",
+      "Not studying platform rules, leading to penalties or store closure",
+      "Slow customer service that loses orders",
+      "Faking orders or reviews, which leads to a ban once detected",
+      "Ignoring after-sales, letting negative reviews build up and hurt ranking"
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "code": 0,
+  "message": "Success",
+  "data": {
+    "inventory": [
+      {
+        "product_id": "1729432087292775345",
+        "skus": [
+          {
+            "id": "1729388324987897824",
+            "seller_sku": "TSHIRT-M-RED",
+            "total_available_quantity": 10,
+            "total_committed_quantity": 1,
+            "warehouse_inventory": [
+              { "warehouse_id": "705491", "available_quantity": 10 }
+            ]
+          },
+          {
+            "id": "1729388324987897825",
+            "seller_sku": "TSHIRT-L-BLUE",
+            "total_available_quantity": 20,
+            "total_committed_quantity": 2,
+            "warehouse_inventory": [
+              { "warehouse_id": "705491", "available_quantity": 20 }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

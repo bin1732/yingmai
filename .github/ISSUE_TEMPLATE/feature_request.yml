@@ -1,0 +1,40 @@
+name: 功能建议
+description: 提出新功能或改进建议
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: 你遇到的使用场景或问题
+      description: 请描述你希望解决的实际经营问题
+      placeholder: 例如：在处理多平台订单时，我希望……
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: 你期望的解决方案
+      placeholder: 描述你希望软件如何做
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 你考虑过的替代方式
+      placeholder: 目前你是如何处理的
+  - type: dropdown
+    id: platform-scope
+    attributes:
+      label: 涉及平台
+      multiple: true
+      options:
+        - 国内电商
+        - 跨境电商
+        - 货源 / 供应链
+        - 通用 / 不区分平台
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 补充说明

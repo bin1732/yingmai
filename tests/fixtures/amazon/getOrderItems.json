@@ -1,0 +1,28 @@
+{
+  "payload": {
+    "AmazonOrderId": "902-3159896-1390916",
+    "OrderItems": [
+      {
+        "ASIN": "BT0093TELA",
+        "OrderItemId": "68828574383266",
+        "SellerSKU": "SKU-EARBUD-01",
+        "Title": "Example wireless earbuds",
+        "QuantityOrdered": 1,
+        "QuantityShipped": 0,
+        "ItemPrice": { "CurrencyCode": "USD", "Amount": "25.99" },
+        "ItemTax": { "CurrencyCode": "USD", "Amount": "2.08" },
+        "ShippingPrice": { "CurrencyCode": "USD", "Amount": "4.99" },
+        "PromotionDiscount": { "CurrencyCode": "USD", "Amount": "2.08" }
+      },
+      {
+        "ASIN": "BCTU1104UEFB",
+        "OrderItemId": "68828574383267",
+        "SellerSKU": "SKU-CABLE-02",
+        "Title": "USB-C cable 2m",
+        "QuantityOrdered": 1,
+        "QuantityShipped": 0,
+        "ItemPrice": { "CurrencyCode": "USD", "Amount": "0.00" }
+      }
+    ]
+  }
+}

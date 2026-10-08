@@ -1,0 +1,29 @@
+{
+  "pdd_goods_list_get_response": {
+    "goods_list": [
+      {
+        "goods_id": 710000000001,
+        "goods_name": "无线蓝牙耳机 Pro",
+        "min_group_price": 12500,
+        "market_price": 19900,
+        "quantity": 100,
+        "goods_thumb_url": "https://t00img.pddpic.com/earbuds-main.jpg",
+        "on_sale": 1,
+        "external_goods_id": "EARBUD-01",
+        "updated_at": "2026-09-20 12:30:00"
+      },
+      {
+        "goods_id": 710000000002,
+        "goods_name": "纯棉短袖 T 恤",
+        "min_group_price": 5990,
+        "market_price": 9900,
+        "quantity": 50,
+        "goods_thumb_url": "https://t00img.pddpic.com/tshirt-main.jpg",
+        "on_sale": 1,
+        "external_goods_id": "TSHIRT-01",
+        "updated_at": "2026-09-21 08:00:00"
+      }
+    ],
+    "total_count": 2
+  }
+}

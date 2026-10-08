@@ -1,0 +1,944 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>盈脉 · 电商工作台 · YingMai Workbench</title>
+  <script>
+(function(){
+  var q=new URLSearchParams(location.search);
+  var t=q.get('theme')||localStorage.getItem('ewb_theme')||'light';
+  var l=q.get('lang')||localStorage.getItem('ewb_lang')||'zh';
+  document.documentElement.setAttribute('data-theme',t);
+  document.documentElement.setAttribute('lang',l==='en'?'en':'zh-CN');
+})();
+</script>
+<link rel="stylesheet" href="/static/css/style.css">
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/icons/favicon-16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/static/icons/favicon-48.png">
+  <link rel="apple-touch-icon" href="/static/icons/apple-touch-icon.png">
+  <link rel="manifest" href="/static/manifest.webmanifest">
+</head>
+<body>
+<div class="app">
+
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-logo">
+      <div class="logo-icon"><img src="/static/icons/favicon-48.png" alt="盈脉" class="logo-icon-img"></div>
+      <span class="logo-text" data-i18n="app_name">盈脉</span>
+    </div>
+    <nav class="nav" id="nav">
+      <div class="section-title">经营总览</div>
+      <div class="nav-item active" data-page="dashboard"><span class="nav-icon">📊</span><span class="nav-label" data-i18n="nav_dashboard">仪表盘</span></div>
+      <div class="nav-item" data-page="history"><span class="nav-icon">🕐</span><span class="nav-label">分析历史</span></div>
+
+      <div class="section-title">店铺连接</div>
+      <div class="nav-item" data-page="shopconn"><span class="nav-icon">🔗</span><span class="nav-label" data-i18n="nav_shopconn">店铺连接</span></div>
+
+      <div class="section-title">订单与履约</div>
+      <div class="nav-item" data-page="orders"><span class="nav-icon">🧾</span><span class="nav-label">订单管理</span></div>
+      <div class="nav-item" data-page="shipping"><span class="nav-icon">📮</span><span class="nav-label">发货管理</span></div>
+      <div class="nav-item" data-page="aftersales"><span class="nav-icon">↩️</span><span class="nav-label">售后管理</span></div>
+
+      <div class="section-title">商品与供应链</div>
+      <div class="nav-item" data-page="products"><span class="nav-icon">📦</span><span class="nav-label">商品库</span></div>
+      <div class="nav-item" data-page="listings"><span class="nav-icon">🏷️</span><span class="nav-label" data-i18n="nav_listings">店铺商品</span></div>
+      <div class="nav-item" data-page="inventory"><span class="nav-icon">🗃️</span><span class="nav-label">库存管理</span></div>
+      <div class="nav-item" data-page="warehouses"><span class="nav-icon">🏢</span><span class="nav-label" data-i18n="nav_warehouses">仓库管理</span></div>
+      <div class="nav-item" data-page="purchases"><span class="nav-icon">🛒</span><span class="nav-label">采购管理</span></div>
+      <div class="nav-item" data-page="suppliers"><span class="nav-icon">🏭</span><span class="nav-label">供应商</span></div>
+
+      <div class="section-title">运营与增长</div>
+      <div class="nav-item" data-page="selection"><span class="nav-icon">🎯</span><span class="nav-label" data-i18n="nav_selection">选品分析</span></div>
+      <div class="nav-item" data-page="launch"><span class="nav-icon">🧭</span><span class="nav-label" data-i18n="nav_launch">卖前体检</span></div>
+      <div class="nav-item" data-page="competitor"><span class="nav-icon">🔍</span><span class="nav-label" data-i18n="nav_competitor">竞品分析</span></div>
+      <div class="nav-item" data-page="reviews"><span class="nav-icon">💬</span><span class="nav-label">评论分析</span></div>
+      <div class="nav-item" data-page="listing"><span class="nav-icon">📋</span><span class="nav-label">Listing生成</span></div>
+      <div class="nav-item" data-page="service"><span class="nav-icon">🎧</span><span class="nav-label">客服话术</span></div>
+      <div class="nav-item" data-page="keywords"><span class="nav-icon">🔑</span><span class="nav-label">关键词检查</span></div>
+      <div class="nav-item" data-page="acos"><span class="nav-icon">📢</span><span class="nav-label">广告ACOS</span></div>
+
+      <div class="section-title">客户与经营</div>
+      <div class="nav-item" data-page="customers"><span class="nav-icon">👥</span><span class="nav-label">客户管理</span></div>
+      <div class="nav-item" data-page="finance"><span class="nav-icon">💹</span><span class="nav-label">经营损益</span></div>
+      <div class="nav-item" data-page="alerts"><span class="nav-icon">🔔</span><span class="nav-label">预警中心</span></div>
+
+      <div class="section-title">财务与工具</div>
+      <div class="nav-item" data-page="calculator"><span class="nav-icon">💰</span><span class="nav-label" data-i18n="nav_calculator">利润计算</span></div>
+      <div class="nav-item" data-page="logistics"><span class="nav-icon">🚚</span><span class="nav-label">物流对比</span></div>
+      <div class="nav-item" data-page="compliance"><span class="nav-icon">✅</span><span class="nav-label">合规检查</span></div>
+
+      <div class="section-title">知识库</div>
+      <div class="nav-item" data-page="knowledge"><span class="nav-icon">📚</span><span class="nav-label" data-i18n="nav_knowledge">平台规范</span></div>
+      <div class="nav-item" data-page="prompts"><span class="nav-icon">📝</span><span class="nav-label" data-i18n="nav_prompts">提示词库</span></div>
+      <div class="nav-item" data-page="deai"><span class="nav-icon">✨</span><span class="nav-label" data-i18n="nav_deai">文案润色</span></div>
+      <div class="nav-item" data-page="guide"><span class="nav-icon">🚀</span><span class="nav-label" data-i18n="nav_guide">入行指引</span></div>
+
+      <div class="section-title">系统</div>
+      <div class="nav-item" data-page="settings"><span class="nav-icon">⚙️</span><span class="nav-label" data-i18n="nav_settings">设置</span></div>
+    </nav>
+    <div class="sidebar-footer">
+      <div style="font-size:11px;color:var(--text-tertiary);text-align:center;">灵感引擎工坊</div>
+    </div>
+  </aside>
+
+  <div class="main">
+    <header class="topbar">
+      <div class="topbar-left">
+        <button class="btn-icon" id="toggleSidebar" title="菜单">☰</button>
+        <span class="topbar-title" id="topbarTitle" data-i18n="nav_dashboard">仪表盘</span>
+      </div>
+      <div class="topbar-right">
+        <span class="badge badge-success" id="modelBadge">
+          <span class="status-dot offline" id="modelDot"></span>
+          <span id="modelStatusText" data-i18n="status_offline">离线</span>
+        </span>
+        <button class="btn-icon" id="themeToggle" title="主题">🌙</button>
+        <button class="btn-icon" id="langToggle" title="语言">EN</button>
+      </div>
+    </header>
+
+    <div class="content">
+
+      <!-- 仪表盘 -->
+      <div class="page active" id="page-dashboard">
+        <div class="page-header">
+          <div>
+            <h2 class="page-title">工作台总览</h2>
+            <p class="page-sub">您的电商经营驾驶舱</p>
+          </div>
+        </div>
+
+        <div class="grid grid-4 kpi-row">
+          <div class="stat-card kpi-card">
+            <div class="kpi-label">商品总数</div>
+            <div class="kpi-value" id="kpiProducts">0</div>
+            <div class="kpi-foot">本地商品库</div>
+          </div>
+          <div class="stat-card kpi-card">
+            <div class="kpi-label">今日分析</div>
+            <div class="kpi-value" id="kpiAnalyses">0</div>
+            <div class="kpi-foot">AI分析次数</div>
+          </div>
+          <div class="stat-card kpi-card">
+            <div class="kpi-label">支持平台</div>
+            <div class="kpi-value">14</div>
+            <div class="kpi-foot">国内 + 跨境</div>
+          </div>
+          <div class="stat-card kpi-card">
+            <div class="kpi-label">AI引擎</div>
+            <div class="kpi-value" id="kpiEngine">内置</div>
+            <div class="kpi-foot" id="kpiEngineSub">本地运行</div>
+          </div>
+        </div>
+
+        <div class="grid grid-2" style="margin-bottom:16px;">
+          <div class="card">
+            <div class="card-title">📈 近7日分析趋势</div>
+            <div id="chartTrend" style="height:260px;"></div>
+          </div>
+          <div class="card">
+            <div class="card-title">🌐 平台分布</div>
+            <div id="chartPlatform" style="height:260px;"></div>
+          </div>
+        </div>
+
+        <div class="grid grid-2">
+          <div class="card">
+            <div class="card-title">⚡ 快捷入口</div>
+            <div class="quick-grid">
+              <button class="quick-btn" onclick="navigateTo('selection')"><span>🎯</span>选品分析</button>
+              <button class="quick-btn" onclick="navigateTo('listing')"><span>📋</span>Listing生成</button>
+              <button class="quick-btn" onclick="navigateTo('calculator')"><span>💰</span>利润计算</button>
+              <button class="quick-btn" onclick="navigateTo('acos')"><span>📢</span>广告ACOS</button>
+              <button class="quick-btn" onclick="navigateTo('products')"><span>📦</span>商品管理</button>
+              <button class="quick-btn" onclick="navigateTo('compliance')"><span>✅</span>合规检查</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title">🔧 AI引擎状态</div>
+            <div id="dashModelStatus"><p style="color:var(--text-tertiary);">检测中...</p></div>
+          </div>
+        </div>
+        <div class="card" style="margin-top:16px;">
+          <div class="card-title">🗓️ 每日销售热力图</div>
+          <p style="font-size:12px;color:var(--text-tertiary);margin-bottom:8px;">按订单创建日期汇总的每日销售额，颜色越深表示当天销售额越高。</p>
+          <div id="chartSalesHeatmap" style="height:240px;"></div>
+        </div>
+      </div>
+
+      <!-- 商品管理 -->
+      <div class="page" id="page-products">
+        <div class="page-header">
+          <div>
+            <h2 class="page-title">商品库</h2>
+            <p class="page-sub">管理你的商品，记录成本与售价</p>
+          </div>
+          <div style="display:flex;gap:8px;">
+            <button class="btn btn-ghost" onclick="location.href='/api/export/products'">导出Excel</button>
+            <button class="btn btn-primary" onclick="showProductForm()">+ 新增商品</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="table-wrap">
+            <table class="data-table" id="productsTable">
+              <thead><tr><th>商品名称</th><th>平台</th><th>成本</th><th>售价</th><th>利润</th><th>备注</th><th>操作</th></tr></thead>
+              <tbody id="productsBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- 分析历史 -->
+      <div class="page" id="page-history">
+        <div class="page-header">
+          <div>
+            <h2 class="page-title">分析历史</h2>
+            <p class="page-sub">所有AI分析记录，可回溯可导出</p>
+          </div>
+          <button class="btn btn-ghost" onclick="location.href='/api/export/history'">导出Excel</button>
+        </div>
+        <div class="card">
+          <div id="historyList"><div class="empty-state"><div class="empty-state-icon">🕐</div>暂无分析记录</div></div>
+        </div>
+      </div>
+
+      <!-- 订单管理 -->
+      <div class="page" id="page-orders">
+        <div class="page-header">
+          <div><h2 class="page-title">订单管理</h2><p class="page-sub">全部订单统一管理</p></div>
+          <button class="btn btn-primary" onclick="showOrderForm()">+ 新增订单</button>
+        </div>
+        <div class="card">
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead><tr><th>订单号</th><th>平台</th><th>商品</th><th>数量</th><th>金额</th><th>买家</th><th>状态</th><th>操作</th></tr></thead>
+              <tbody id="ordersBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- 发货管理 -->
+      <div class="page" id="page-shipping">
+        <div class="page-header">
+          <div><h2 class="page-title">发货管理</h2><p class="page-sub">待发货订单处理与物流跟踪</p></div>
+        </div>
+        <div class="card">
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead><tr><th>订单号</th><th>平台</th><th>商品</th><th>买家</th><th>状态</th><th>物流单号</th><th>操作</th></tr></thead>
+              <tbody id="shippingBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- 售后管理 -->
+      <div class="page" id="page-aftersales">
+        <div class="page-header">
+          <div><h2 class="page-title">售后管理</h2><p class="page-sub">退款退货全流程记录</p></div>
+          <button class="btn btn-primary" onclick="showAftersaleForm()">+ 新增售后单</button>
+        </div>
+        <div class="card">
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead><tr><th>订单号</th><th>平台</th><th>类型</th><th>原因</th><th>金额</th><th>状态</th><th>操作</th></tr></thead>
+              <tbody id="aftersalesBody"></tbody>
+            </table>
+          </div>
+        </div>
+      
+        <div id="tkHost-aftersales" class="tk-host"></div>
+      </div>
+
+      <!-- 库存管理 -->
+      <div class="page" id="page-inventory">
+        <div class="page-header">
+          <div><h2 class="page-title">库存管理</h2><p class="page-sub">实时库存与安全库存预警</p></div>
+          <button class="btn btn-primary" onclick="showInventoryForm()">+ 新增库存</button>
+        </div>
+        <div class="card">
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead><tr><th>商品</th><th>SKU</th><th>仓库</th><th>库存数量</th><th>安全库存</th><th>状态</th><th>操作</th></tr></thead>
+              <tbody id="inventoryBody"></tbody>
+            </table>
+          </div>
+        </div>
+      
+        <div id="tkHost-inventory" class="tk-host"></div>
+      </div>
+
+      <!-- 采购管理 -->
+      <div class="page" id="page-purchases">
+        <div class="page-header">
+          <div><h2 class="page-title">采购管理</h2><p class="page-sub">采购订单全流程跟踪</p></div>
+          <button class="btn btn-primary" onclick="showPurchaseForm()">+ 新增采购单</button>
+        </div>
+        <div class="card">
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead><tr><th>采购单号</th><th>供应商</th><th>商品</th><th>数量</th><th>单价</th><th>总额</th><th>状态</th><th>操作</th></tr></thead>
+              <tbody id="purchasesBody"></tbody>
+            </table>
+          </div>
+        </div>
+      
+        <div id="tkHost-purchases" class="tk-host"></div>
+      </div>
+
+      <!-- 供应商 -->
+      <div class="page" id="page-suppliers">
+        <div class="page-header">
+          <div><h2 class="page-title">供应商管理</h2><p class="page-sub">供应商档案与联系方式</p></div>
+          <button class="btn btn-primary" onclick="showSupplierForm()">+ 新增供应商</button>
+        </div>
+        <div class="card">
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead><tr><th>名称</th><th>联系人</th><th>电话</th><th>地址</th><th>主营产品</th><th>操作</th></tr></thead>
+              <tbody id="suppliersBody"></tbody>
+            </table>
+          </div>
+        </div>
+      
+        <div id="tkHost-suppliers" class="tk-host"></div>
+      </div>
+
+      <!-- 店铺商品（内部商品 ↔ 各平台 listing 映射） -->
+      <div class="page" id="page-listings" data-page="listings">
+        <div class="page-header">
+          <div>
+            <h2 class="page-title">店铺商品</h2>
+            <p class="page-sub">把一个内部商品关联到多个平台、多个店铺的在售链接，订单匹配与库存统一扣减都以它为准</p>
+          </div>
+          <div style="display:flex;gap:8px;">
+            <button class="btn btn-ghost" onclick="location.href='/api/export/listings'">导出</button>
+            <button class="btn btn-primary" id="btnNewListing">+ 关联店铺商品</button>
+          </div>
+        </div>
+        <div id="wbListings"></div>
+      </div>
+
+      <!-- 仓库管理 -->
+      <div class="page" id="page-warehouses" data-page="warehouses">
+        <div class="page-header">
+          <div>
+            <h2 class="page-title">仓库管理</h2>
+            <p class="page-sub">维护多个仓库与库位，支持仓间调拨；库存结存由每一笔出入库流水自动计算</p>
+          </div>
+          <button class="btn btn-primary" id="btnNewWarehouse">+ 新增仓库</button>
+        </div>
+        <div id="wbWarehouses"></div>
+      </div>
+
+      <!-- 客户管理 -->
+      <div class="page" id="page-customers" data-page="customers">
+        <div class="page-header">
+          <div>
+            <h2 class="page-title">客户管理</h2>
+            <p class="page-sub">由真实订单自动汇总客户档案，按 RFM 分层，关注复购与客户价值</p>
+          </div>
+        </div>
+        <div id="wbCustomers"></div>
+      </div>
+
+      <!-- 经营损益 -->
+      <div class="page" id="page-finance" data-page="finance">
+        <div class="page-header">
+          <div>
+            <h2 class="page-title">经营损益</h2>
+            <p class="page-sub">按真实订单逐单核算收入、商品成本、平台费用、物流、广告与退款，得到净利润</p>
+          </div>
+          <div style="display:flex;gap:8px;">
+            <button class="btn btn-ghost" id="btnNewExpense">+ 登记费用</button>
+            <button class="btn btn-ghost" id="btnReconcile">平台结算对账</button>
+          </div>
+        </div>
+        <div id="wbFinance"></div>
+      </div>
+
+      <!-- 预警中心 -->
+      <div class="page" id="page-alerts" data-page="alerts">
+        <div class="page-header">
+          <div>
+            <h2 class="page-title">预警中心</h2>
+            <p class="page-sub">主动巡检缺货、发货超时、退款偏高、滞销等情况，帮助你及时处理</p>
+          </div>
+          <button class="btn btn-primary" id="btnRunMonitors">立即巡检</button>
+        </div>
+        <div id="wbAlerts"></div>
+      </div>
+
+      <!-- AI助手 -->
+      <div class="page" id="page-assistant">
+        <div class="chat-container">
+          <div class="chat-model-bar" id="chatModelBar">
+            <span class="status-dot online" id="chatModelDot"></span>
+            <span id="chatModelName">检测中...</span>
+            <span style="color:var(--text-tertiary);font-size:12px;margin-left:auto;" id="chatTokenBadge"></span>
+            <span style="color:var(--text-tertiary);font-size:12px;" id="chatModelEngine"></span>
+          </div>
+          <div class="chat-messages" id="chatMessages">
+            <div class="chat-msg assistant" id="welcomeMsg"></div>
+          </div>
+          <div class="chat-input-bar">
+            <button class="btn-icon" id="voiceBtn" title="语音输入">🎤</button>
+            <textarea id="chatInput" rows="1" placeholder="输入你的电商问题..."></textarea>
+            <button class="btn btn-primary" id="sendBtn">发送</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 选品分析（AI深度） -->
+      <div class="page" id="page-selection">
+        <h2 style="margin-bottom:16px;">🎯 选品深度分析</h2>
+        <div class="grid grid-2">
+          <div class="card">
+            <div class="form-group"><label class="label">平台</label>
+              <select class="select" id="selPlatform" data-platforms></select></div>
+            <div class="form-group"><label class="label">产品名称</label>
+              <input class="input" id="selProduct" placeholder="如：便携蓝牙音箱 / 瑜伽垫 / 宠物自动喂食器"></div>
+            <div class="form-group"><label class="label">预估采购成本</label>
+              <input class="input" type="number" id="selCost" placeholder="元" value="15"></div>
+            <div class="form-group"><label class="label">目标售价</label>
+              <input class="input" type="number" id="selPrice" placeholder="元" value="49"></div>
+            <div class="form-group"><label class="label">补充信息（可选）</label>
+              <textarea class="textarea" id="selExtra" rows="2" placeholder="目标人群、已有货源、想避开的竞品等"></textarea></div>
+            <button class="btn btn-primary" id="selAnalyzeBtn">🔍 AI深度分析</button>
+          </div>
+          <div class="card">
+            <div class="card-title">📊 分析报告</div>
+            <div id="selResult" style="min-height:400px;white-space:pre-wrap;font-size:13px;line-height:1.8;color:var(--text-secondary);">
+              <div class="empty-state"><div class="empty-state-icon">🎯</div>填写左侧信息，点击“AI深度分析”</div>
+            </div>
+          </div>
+        </div>
+      
+        <div id="tkHost-selection" class="tk-host"></div>
+      </div>
+
+      <!-- 卖前体检（上架准备） -->
+      <div class="page" id="page-launch">
+        <h2 style="margin-bottom:8px;">🧭 卖前体检</h2>
+        <p class="page-sub" id="launchIntro"></p>
+        <div id="tkHost-launch" class="tk-host"></div>
+      </div>
+
+      <!-- 竞品分析（AI深度） -->
+      <div class="page" id="page-competitor">
+        <h2 style="margin-bottom:16px;">🔍 竞品深度拆解</h2>
+        <div class="grid grid-2">
+          <div class="card">
+            <div class="form-group"><label class="label">平台</label>
+              <select class="select" id="compPlatform" data-platforms></select></div>
+            <div class="form-group"><label class="label">竞品名称/链接</label>
+              <input class="input" id="compProduct" placeholder="粘贴竞品标题或链接"></div>
+            <div class="form-group"><label class="label">已知信息（价格/卖点/差评等）</label>
+              <textarea class="textarea" id="compExtra" rows="4" placeholder="如：售价$29.99，主图强调防水，差评说续航短、充电慢"></textarea></div>
+            <button class="btn btn-primary" id="compAnalyzeBtn">🔍 AI拆解竞品</button>
+          </div>
+          <div class="card">
+            <div class="card-title">📋 拆解报告</div>
+            <div id="compResult" style="min-height:400px;white-space:pre-wrap;font-size:13px;line-height:1.8;color:var(--text-secondary);">
+              <div class="empty-state"><div class="empty-state-icon">🔍</div>输入竞品信息，AI将拆解Listing、弱点和超越策略</div>
+            </div>
+          </div>
+        </div>
+
+        <div id="tkHost-competitor" class="tk-host"></div>
+      </div>
+
+      <!-- 评论分析 -->
+      <div class="page" id="page-reviews">
+        <h2 style="margin-bottom:16px;">💬 评论分析器</h2>
+        <div class="grid grid-2">
+          <div class="card">
+            <div class="form-group"><label class="label">产品名称</label>
+              <input class="input" id="revProduct" placeholder="如：蓝牙耳机"></div>
+            <div class="form-group"><label class="label">粘贴竞品评论（多条用空行分隔）</label>
+              <textarea class="textarea" id="revText" rows="10" placeholder="示例：&#10;耳机续航太短了，充一次电用2小时就没电&#10;&#10;音质不错，但戴着不舒服，夹头&#10;&#10;连接很稳定，性价比高"></textarea></div>
+            <button class="btn btn-primary" id="revBtn">💡 AI提炼痛点</button>
+          </div>
+          <div class="card">
+            <div class="card-title">📈 评论洞察</div>
+            <div id="revResult" style="min-height:400px;white-space:pre-wrap;font-size:13px;line-height:1.8;color:var(--text-secondary);">
+              <div class="empty-state"><div class="empty-state-icon">💬</div>粘贴评论，AI帮你找出用户真正的抱怨和机会</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Listing生成器 -->
+      <div class="page" id="page-listing">
+        <h2 style="margin-bottom:16px;">📋 Listing智能生成</h2>
+        <div class="grid grid-2">
+          <div class="card">
+            <div class="form-group"><label class="label">平台</label>
+              <select class="select" id="listPlatform" data-platforms></select></div>
+            <div class="form-group"><label class="label">产品名称与核心卖点</label>
+              <textarea class="textarea" id="listProduct" rows="3" placeholder="如：便携蓝牙音箱，IPX7防水，20小时续航，TWS配对"></textarea></div>
+            <div class="form-group"><label class="label">采购成本</label>
+              <input class="input" type="number" id="listCost" value="25"></div>
+            <div class="form-group"><label class="label">目标售价</label>
+              <input class="input" type="number" id="listPrice" value="59.9"></div>
+            <div class="form-group"><label class="label">补充（目标人群/差异化）</label>
+              <input class="input" id="listExtra" placeholder="如：户外爱好者，主打小体积大音量"></div>
+            <button class="btn btn-primary" id="listBtn">✨ AI生成Listing</button>
+          </div>
+          <div class="card">
+            <div class="card-title">📄 Listing草稿</div>
+            <div id="listResult" style="min-height:400px;white-space:pre-wrap;font-size:13px;line-height:1.8;color:var(--text-secondary);">
+              <div class="empty-state"><div class="empty-state-icon">📋</div>AI将生成标题、五点描述、搜索词和主图建议</div>
+            </div>
+          </div>
+        </div>
+      
+        <div id="tkHost-listing" class="tk-host"></div>
+      </div>
+
+      <!-- 客服话术 -->
+      <div class="page" id="page-service">
+        <h2 style="margin-bottom:16px;">🎧 客服话术生成器</h2>
+        <div class="grid grid-2">
+          <div class="card">
+            <div class="form-group"><label class="label">场景</label>
+              <select class="select" id="svcScene">
+                <option value="物流延迟">物流延迟/未到货</option>
+                <option value="商品质量问题">商品质量问题</option>
+                <option value="要求退款">买家要求退款/退货</option>
+                <option value="差评威胁">差评威胁要补偿</option>
+                <option value="发货前改地址">发货前改地址</option>
+                <option value="发票问题">发票问题</option>
+                <option value="其他">其他场景</option>
+              </select></div>
+            <div class="form-group"><label class="label">具体情况描述</label>
+              <textarea class="textarea" id="svcText" rows="5" placeholder="描述买家的具体问题，如：买家说3天没收到货，要退款还要给差评"></textarea></div>
+            <div class="form-group"><label class="label">平台</label>
+              <select class="select" id="svcPlatform" data-platforms></select></div>
+            <button class="btn btn-primary" id="svcBtn">💬 生成回复</button>
+          </div>
+          <div class="card">
+            <div class="card-title">📩 建议回复</div>
+            <div id="svcResult" style="min-height:300px;white-space:pre-wrap;font-size:14px;line-height:1.8;padding:16px;background:var(--bg-input);border-radius:8px;">
+              <div class="empty-state"><div class="empty-state-icon">🎧</div>选择场景并描述情况，AI生成专业客服回复</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 关键词检查 -->
+      <div class="page" id="page-keywords">
+        <h2 style="margin-bottom:16px;">🔑 标题关键词检查</h2>
+        <div class="grid grid-2">
+          <div class="card">
+            <div class="form-group"><label class="label">平台</label>
+              <select class="select" id="kwPlatform" data-platforms></select></div>
+            <div class="form-group"><label class="label">粘贴你的商品标题</label>
+              <textarea class="textarea" id="kwTitle" rows="3" placeholder="如：Portable Bluetooth Speaker Waterproof IPX7 Wireless Speakers 20H Playtime"></textarea></div>
+            <div class="form-group"><label class="label">目标关键词（可选）</label>
+              <input class="input" id="kwExtra" placeholder="如：户外音箱、迷你音响"></div>
+            <button class="btn btn-primary" id="kwBtn">🔍 检查关键词覆盖</button>
+          </div>
+          <div class="card">
+            <div class="card-title">📊 关键词分析</div>
+            <div id="kwResult" style="min-height:300px;white-space:pre-wrap;font-size:13px;line-height:1.8;color:var(--text-secondary);">
+              <div class="empty-state"><div class="empty-state-icon">🔑</div>粘贴标题，AI检查关键词覆盖并给出优化建议</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 利润计算器 -->
+      <div class="page" id="page-calculator">
+        <h2 style="margin-bottom:20px;">💰 利润计算器</h2>
+        <div class="grid grid-2">
+          <div class="card">
+            <div class="form-group"><label class="label">商品采购成本</label><input class="input" type="number" id="calcProductCost" value="20" step="0.01"></div>
+            <div class="form-group"><label class="label">国内物流</label><input class="input" type="number" id="calcDomestic" value="3" step="0.01"></div>
+            <div class="form-group"><label class="label">国际/尾程运费</label><input class="input" type="number" id="calcIntl" value="8" step="0.01"></div>
+            <div class="form-group"><label class="label">平台佣金 (%)</label><input class="input" type="number" id="calcPlatformFee" value="5" step="0.1"></div>
+            <div class="form-group"><label class="label">支付手续费 (%)</label><input class="input" type="number" id="calcPaymentFee" value="1" step="0.1"></div>
+            <div class="form-group"><label class="label">广告费（每单）</label><input class="input" type="number" id="calcAd" value="5" step="0.01"></div>
+            <div class="form-group"><label class="label">退款率 (%)</label><input class="input" type="number" id="calcRefund" value="5" step="0.1"></div>
+            <div class="form-group"><label class="label">包装材料</label><input class="input" type="number" id="calcPackaging" value="1" step="0.01"></div>
+            <div class="form-group"><label class="label">预期售价</label><input class="input" type="number" id="calcPrice" value="69.9" step="0.01"></div>
+            <button class="btn btn-primary" id="calcBtn">计算利润</button>
+          </div>
+          <div class="card" id="calcResultCard" style="display:none;">
+            <div class="card-title">📊 计算结果</div>
+            <div class="profit-result" id="calcResult"></div>
+          </div>
+        </div>
+        <div class="card" style="margin-top:16px;">
+          <div class="card-title">📈 售价—利润敏感性</div>
+          <p style="font-size:12px;color:var(--text-tertiary);margin-bottom:8px;">在当前成本与费率下，不同售价对应的利润与利润率，帮助选择更合适的定价。</p>
+          <div id="chartProfitSensitivity" style="height:300px;"></div>
+        </div>
+        <div class="card" style="margin-top:16px;">
+          <div class="card-title">↩️ 退货率—利润敏感性</div>
+          <p style="font-size:12px;color:var(--text-tertiary);margin-bottom:8px;">在当前售价与成本下，退货率上升对利润的影响；曲线与零轴的交点即盈亏平衡退货率。</p>
+          <div id="chartRefundSensitivity" style="height:300px;"></div>
+        </div>
+      </div>
+
+      <!-- 广告ACOS -->
+      <div class="page" id="page-acos">
+        <h2 style="margin-bottom:20px;">📢 广告ACOS计算器</h2>
+        <div class="grid grid-2">
+          <div class="card">
+            <div class="form-group"><label class="label">单次点击成本 CPC (¥)</label><input class="input" type="number" id="acosCpc" value="2.5" step="0.1"></div>
+            <div class="form-group"><label class="label">转化率 CVR (%)</label><input class="input" type="number" id="acosCvr" value="8" step="0.5"></div>
+            <div class="form-group"><label class="label">商品售价 (¥)</label><input class="input" type="number" id="acosPrice" value="69.9" step="0.1"></div>
+            <div class="form-group"><label class="label">产品成本 (¥)</label><input class="input" type="number" id="acosCost" value="20" step="0.1"></div>
+            <div class="form-group"><label class="label">其他费用占比 (%)</label><input class="input" type="number" id="acosFees" value="8" step="0.5"></div>
+            <div class="form-group"><label class="label">目标ACOS (%)</label><input class="input" type="number" id="acosTarget" value="30" step="1"></div>
+            <button class="btn btn-primary" id="acosBtn">计算广告指标</button>
+          </div>
+          <div class="card" id="acosResultCard" style="display:none;">
+            <div class="card-title">📊 广告分析</div>
+            <div id="acosResult" style="font-size:14px;line-height:2;"></div>
+          </div>
+        </div>
+        <div class="card" style="margin-top:16px;">
+          <div class="card-title">📈 点击成本—ACOS 曲线</div>
+          <p style="font-size:12px;color:var(--text-tertiary);margin-bottom:8px;">在当前转化率下，不同单次点击成本对应的 ACOS，虚线为盈亏平衡 ACOS。</p>
+          <div id="chartAcosCurve" style="height:300px;"></div>
+        </div>
+      
+        <div id="tkHost-acos" class="tk-host"></div>
+      </div>
+
+      <!-- 物流对比 -->
+      <div class="page" id="page-logistics">
+        <h2 style="margin-bottom:20px;">🚚 物流方案对比</h2>
+        <div class="card" style="margin-bottom:16px;">
+          <p style="color:var(--text-secondary);font-size:13px;">根据包裹重量、时效要求和预算选择物流方式。数据为参考价格，实际以物流商报价为准。</p>
+        </div>
+        <h3 style="margin:16px 0 12px;font-size:14px;">国际物流方案</h3>
+        <div class="grid grid-3" id="intlLogistics"></div>
+        <h3 style="margin:24px 0 12px;font-size:14px;">国内快递参考</h3>
+        <div class="grid grid-4" id="domLogistics"></div>
+      
+        <div id="tkHost-logistics" class="tk-host"></div>
+      </div>
+
+      <!-- 平台规范 -->
+      <div class="page" id="page-knowledge">
+        <h2 style="margin-bottom:20px;">📚 平台规范中心</h2>
+        <h3 style="margin:16px 0 12px;font-size:14px;">国内电商平台</h3>
+        <div class="grid grid-3" id="domesticPlatforms"></div>
+        <h3 style="margin:24px 0 12px;font-size:14px;">跨境电商平台</h3>
+        <div class="grid grid-3" id="crossborderPlatforms"></div>
+      </div>
+
+      <!-- 合规检查 -->
+      <div class="page" id="page-compliance">
+        <h2 style="margin-bottom:20px;">✅ 合规检查清单</h2>
+        <div class="grid grid-2" id="complianceContainer"></div>
+      
+        <div id="tkHost-compliance" class="tk-host"></div>
+      </div>
+
+      <!-- 提示词库 -->
+      <div class="page" id="page-prompts">
+        <h2 style="margin-bottom:20px;">📝 提示词库</h2>
+        <div class="form-group"><input class="input" id="promptSearch" placeholder="搜索提示词..."></div>
+        <div id="promptsContainer"></div>
+      </div>
+
+      <!-- 文案润色 -->
+      <div class="page" id="page-deai">
+        <h2 style="margin-bottom:20px;">✨ 文案润色</h2>
+        <div class="grid grid-2">
+          <div class="card">
+            <div class="form-group"><label class="label">粘贴AI生成的文本</label>
+              <textarea class="textarea" id="deaiInput" rows="8" placeholder="把AI生成的商品描述、文案粘贴到这里..."></textarea></div>
+            <div class="form-group"><label class="label">改写风格</label>
+              <select class="select" id="deaiStyle">
+                <option value="natural">自然口语</option><option value="professional">专业可信</option><option value="casual">轻松聊天</option>
+              </select></div>
+            <button class="btn btn-primary" id="deaiBtn">开始改写</button>
+          </div>
+          <div class="card">
+            <div class="card-title">✨ 改写结果</div>
+            <div id="deaiOutput" style="min-height:200px;white-space:pre-wrap;color:var(--text-secondary);">暂无数据</div>
+            <button class="btn btn-ghost" id="deaiCopyBtn" style="margin-top:12px;">复制结果</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 新手入行 -->
+      <div class="page" id="page-guide">
+        <h2 style="margin-bottom:20px;">🚀 新手入行指引</h2>
+        <div class="card" style="margin-bottom:20px;">
+          <div class="card-title" id="guideEntityTitle"></div>
+          <div id="guideEntityIntro" style="font-size:13px;color:var(--text-secondary);line-height:1.7;margin-bottom:14px;"></div>
+          <div class="grid grid-2" id="guideEntityBody"></div>
+        </div>
+        <div class="grid grid-2">
+          <div class="card"><div class="card-title" id="guideDomesticTitle"></div><div class="steps" id="guideDomesticSteps"></div></div>
+          <div class="card"><div class="card-title" id="guideCrossTitle"></div><div class="steps" id="guideCrossSteps"></div></div>
+        </div>
+        <div class="card" style="margin-top:20px;">
+          <div class="card-title">⚠️ 新手常见错误</div>
+          <ul id="guideMistakesList" style="padding-left:20px;line-height:2;color:var(--text-secondary);"></ul>
+        </div>
+      
+        <div id="tkHost-guide" class="tk-host"></div>
+      </div>
+
+      <!-- 店铺连接 -->
+      <div class="page" id="page-shopconn">
+        <div class="page-header">
+          <div>
+            <h2 class="page-title" data-i18n="sc_title">店铺连接</h2>
+            <p class="page-sub" data-i18n="sc_sub">用您自己的店铺凭证，在本机直接读取商品与订单。凭证加密后仅保存在本设备，不会上传。</p>
+          </div>
+          <button class="btn btn-primary" id="scAddBtn" data-i18n="sc_add">＋ 连接店铺</button>
+        </div>
+
+        <div class="card">
+          <div class="card-title" data-i18n="sc_sync_settings">同步设置</div>
+          <div class="sc-sync-row">
+            <label class="sc-check-label">
+              <input type="checkbox" id="scAutoSync" checked>
+              <span data-i18n="sc_auto_sync">自动同步</span>
+            </label>
+            <div class="sc-interval">
+              <label class="label" for="scInterval" data-i18n="sc_interval">同步间隔</label>
+              <select id="scInterval" class="input">
+                <option value="60" data-i18n="sc_iv_1">1 分钟</option>
+                <option value="180" data-i18n="sc_iv_3">3 分钟</option>
+                <option value="300" data-i18n="sc_iv_5">5 分钟</option>
+                <option value="900" data-i18n="sc_iv_15">15 分钟</option>
+                <option value="1800" data-i18n="sc_iv_30">30 分钟</option>
+              </select>
+            </div>
+            <button class="btn btn-ghost" id="scSyncAll" data-i18n="sc_sync_now">立即同步全部</button>
+          </div>
+          <p class="sc-note" data-i18n="sc_note">工作台运行期间按所选间隔自动同步；关闭后暂停，重新打开会自动补齐。各平台会按官方限额自动调整请求节奏。</p>
+        </div>
+
+        <h3 class="block-title" data-i18n="sc_my_shops">我的店铺</h3>
+        <div id="scConnections" class="grid grid-2"></div>
+        <div id="scEmpty" class="empty-hint" data-i18n="sc_empty">还没有连接店铺。点击右上角“连接店铺”开始；连接后可在“店铺商品”查看商品、在“订单管理”查看订单。</div>
+
+        <h3 class="block-title" data-i18n="sc_platforms">可接入平台</h3>
+        <div id="scCatalog" class="grid grid-3"></div>
+      </div>
+
+      <!-- 设置 -->
+      <div class="page" id="page-settings">
+        <h2 style="margin-bottom:20px;">⚙️ 设置</h2>
+        <div class="grid grid-2">
+          <div class="card">
+            <div class="card-title">🎨 外观</div>
+            <div class="form-group"><label class="label">主题模式</label>
+              <div style="display:flex;gap:10px;">
+                <button class="btn btn-ghost" onclick="setTheme('light')">☀️ 浅色</button>
+                <button class="btn btn-ghost" onclick="setTheme('dark')">🌙 深色</button>
+              </div></div>
+            <div class="form-group"><label class="label">界面语言</label>
+              <div style="display:flex;gap:10px;">
+                <button class="btn btn-ghost" onclick="setLang('zh')">简体中文</button>
+                <button class="btn btn-ghost" onclick="setLang('en')">English</button>
+              </div></div>
+            <div class="form-group"><label class="label">用户引导</label>
+              <label style="display:flex;align-items:center;gap:8px;cursor:pointer;">
+                <input type="checkbox" id="onboardingToggle" checked> 启动时显示引导
+              </label></div>
+            <div class="form-group"><label class="label">关闭窗口时</label>
+              <select id="closeAction" class="input">
+                <option value="ask">每次询问</option>
+                <option value="minimize">最小化到托盘，继续运行</option>
+                <option value="quit">直接退出工作台</option>
+              </select></div>
+          </div>
+          <div class="card">
+            <div class="card-title">🤖 AI引擎配置</div>
+            <div class="form-group">
+              <label class="label">服务商预设</label>
+              <select id="cfgPreset" class="input" onchange="applyPreset()">
+                <option value="builtin">内置助手（默认，无需网络）</option>
+                <option value="deepseek">DeepSeek</option>
+                <option value="qwen">通义千问</option>
+                <option value="zhipu">智谱GLM</option>
+                <option value="moonshot">月之暗面</option>
+                <option value="siliconflow">硅基流动</option>
+                <option value="openai">OpenAI</option>
+                <option value="lmstudio">LM Studio（本地）</option>
+                <option value="ollama">Ollama（用户本地）</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="label">API地址 (Base URL)</label>
+              <input id="cfgBaseUrl" class="input" value="" placeholder="选择服务商后自动填写，也可手动输入">
+            </div>
+            <div class="form-group">
+              <label class="label">API Key（云端模型必填，本地留空）</label>
+              <input id="cfgApiKey" class="input" type="password" placeholder="sk-...">
+            </div>
+            <div class="form-group">
+              <label class="label">模型</label>
+              <button class="btn btn-ghost" onclick="testProvider()" style="margin-bottom:8px;">🔍 检测可用模型</button>
+              <select id="cfgModel" class="input">
+                <option value="" disabled>检测后显示模型</option>
+              </select>
+              <div id="cfgModelsHint" style="font-size:12px;color:var(--text-tertiary);margin-top:4px;">选择云端服务商后，填入Key点“检测可用模型”</div>
+              <div id="cfgKeyLink" style="margin-top:8px;font-size:12px;"></div>
+            </div>
+            <div class="form-group">
+              <button class="btn btn-ghost" onclick="detectLocalModels()" style="width:100%;">🔍 检测本地大模型</button>
+              <div id="localModelsHint" style="font-size:12px;color:var(--text-tertiary);margin-top:4px;"></div>
+            </div>
+            <button class="btn btn-primary" onclick="saveModelConfig()">💾 保存配置</button>
+            <div id="cfgStatus" style="margin-top:10px;color:var(--text-tertiary);font-size:13px;"></div>
+            <div style="margin-top:16px;padding-top:12px;border-top:1px solid var(--border);">
+              <div id="settingsModelInfo"><p style="color:var(--text-tertiary);font-size:13px;">检测中...</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="card" style="margin-top:20px;">
+          <div class="card-title">🗄️ 数据管理</div>
+
+          <div class="data-io-block">
+            <div class="data-io-label">导出数据</div>
+            <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center;">
+              <select id="exportType" class="input" style="width:auto;min-width:150px;">
+                <option value="products">商品库</option>
+                <option value="orders">订单</option>
+                <option value="inventory">库存</option>
+                <option value="purchases">采购</option>
+                <option value="suppliers">供应商</option>
+                <option value="aftersales">售后</option>
+                <option value="history">分析历史</option>
+              </select>
+              <button class="btn btn-outline" onclick="exportCsv()">导出表格（CSV）</button>
+              <button class="btn btn-outline" onclick="exportBackup()">导出完整备份（JSON）</button>
+            </div>
+          </div>
+
+          <div class="data-io-block">
+            <div class="data-io-label">导入数据</div>
+            <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center;">
+              <select id="importType" class="input" style="width:auto;min-width:170px;">
+                <option value="">导入 CSV 前请先选择类型</option>
+                <option value="products">商品库</option>
+                <option value="orders">订单</option>
+                <option value="inventory">库存</option>
+                <option value="purchases">采购</option>
+                <option value="suppliers">供应商</option>
+                <option value="aftersales">售后</option>
+                <option value="history">分析历史</option>
+              </select>
+              <input type="file" id="importFile" accept=".csv,.json" class="input" style="width:auto;flex:1;min-width:200px;" onchange="handleImportFile(this)">
+            </div>
+            <p style="color:var(--text-tertiary);font-size:12px;margin-top:8px;">
+              导入 CSV 请先选择对应类型；JSON 备份文件无需选择类型。建议先用本工作台导出的表格作为模板填写。
+            </p>
+            <div id="importPreview" style="display:none;"></div>
+          </div>
+
+          <div class="data-io-block">
+            <div class="data-io-label">示例数据</div>
+            <p style="color:var(--text-secondary);font-size:13px;margin-bottom:10px;">
+              可以加载一套示例数据，快速了解从采购、库存到订单、售后的基本流程。示例数据可随时一键清除，不会影响你的真实数据。
+            </p>
+            <div style="display:flex;gap:10px;">
+              <button class="btn btn-outline" onclick="seedDemo()">📥 加载示例数据</button>
+              <button class="btn btn-outline" onclick="clearDemo()">🗑️ 清除示例数据</button>
+            </div>
+          </div>
+        </div>
+        <div class="card" style="margin-top:20px;">
+          <div class="card-title">📱 手机访问（同一局域网）</div>
+          <p style="color:var(--text-secondary);font-size:13px;line-height:1.7;">
+            手机和电脑连接同一个 Wi‑Fi 后，用手机浏览器扫描二维码，即可在手机上使用工作台，外出看数据、回消息更方便。
+          </p>
+          <div class="form-group">
+            <label class="label">访问码（可选，建议设置，防止同网络其他人打开）</label>
+            <input id="mobilePin" class="input" inputmode="numeric" placeholder="留空则不需要访问码" style="max-width:260px;">
+          </div>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center;">
+            <button class="btn btn-primary" id="mobileToggleBtn" onclick="toggleMobile()">开启手机访问</button>
+            <span id="mobileStatus" style="font-size:13px;color:var(--text-tertiary);"></span>
+          </div>
+          <div id="mobileQrBox" style="display:none;margin-top:16px;align-items:center;gap:20px;flex-wrap:wrap;">
+            <img id="mobileQrImg" src="" alt="二维码" style="width:200px;height:200px;border-radius:12px;border:1px solid var(--border);background:#fff;padding:8px;">
+            <div style="font-size:13px;line-height:1.9;color:var(--text-secondary);">
+              <div>1. 手机连接同一 Wi‑Fi</div>
+              <div>2. 用手机浏览器扫码或输入地址</div>
+              <div id="mobileUrl" style="color:var(--accent);"></div>
+              <div>3. 如设置了访问码，按提示输入</div>
+              <div style="color:var(--text-tertiary);font-size:12px;margin-top:6px;">
+                首次开启若出现系统网络提示，请选择“允许”（专用网络）。<br>
+                在手机浏览器里可使用“添加到主屏幕”，方便下次打开。
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:20px;">
+          <div class="card-title">ℹ️ 关于</div>
+          <p style="color:var(--text-secondary);line-height:2;">
+            <strong>盈脉（YingMai）· 电商工作台</strong> v4.5.2<br>
+            灵感引擎工坊 · bin1732<br>
+            开源许可：GPL-3.0-only<br>
+            本地运行 · 数据保存在本机 · 支持国内与跨境平台
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div id="toastContainer"></div>
+
+<!-- 悬浮电商助手 -->
+<div id="floatAssistant" class="float-assistant" onclick="toggleFloatChat()">
+  <div class="float-tooltip">遇到问题了？说说看</div>
+  <div class="float-avatar">
+    <div class="float-eye left"></div>
+    <div class="float-eye right"></div>
+  </div>
+</div>
+
+<!-- 悬浮聊天面板 -->
+<div id="floatChatPanel" class="float-chat-panel">
+  <div class="float-chat-header">
+    <div style="display:flex;align-items:center;gap:8px;">
+      <span class="status-dot online" id="floatChatDot"></span>
+      <strong>电商助手</strong>
+      <span style="color:var(--text-tertiary);font-size:11px;margin-left:8px;" id="floatChatModel"></span>
+    </div>
+    <button onclick="toggleFloatChat()" style="background:none;border:none;font-size:18px;cursor:pointer;color:var(--text-tertiary);">✕</button>
+  </div>
+  <div class="float-warming" id="floatWarming" hidden>
+    <span class="warm-spinner"></span><span id="floatWarmingText">正在准备电商助手，马上就好…</span>
+  </div>
+  <div class="float-chat-messages" id="floatChatMessages">
+    <div class="chat-msg assistant">你好！我专注于帮您解决实际的电商问题，比如平台规则解读、费用计算或者操作指导。</div>
+  </div>
+  <div class="float-chat-input">
+    <button class="btn-icon" id="floatVoiceBtn" title="语音输入">🎤</button>
+    <textarea id="floatChatInput" rows="1" placeholder="输入你的电商问题..."></textarea>
+    <button class="btn btn-primary" id="floatSendBtn">发送</button>
+  </div>
+</div>
+
+<script src="/static/js/echarts.min.js"></script>
+<script src="/static/js/i18n.js"></script>
+<script src="/static/js/lang-phrases.js"></script>
+<script src="/static/js/app.js"></script>
+<script src="/static/js/toolkits.js"></script>
+<script src="/static/js/voice-web.js"></script>
+<script src="/static/js/reviews.js"></script>
+<script src="/static/js/workbench.js"></script>
+<script src="/static/js/shopconn-web.js"></script>
+<script src="/static/js/shopconn-tutorial.js"></script>
+</body>
+</html>

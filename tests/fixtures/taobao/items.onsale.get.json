@@ -1,0 +1,52 @@
+{
+  "items_onsale_get_response": {
+    "total_results": 2,
+    "items": {
+      "item": [
+        {
+          "num_iid": 520000000001,
+          "title": "无线蓝牙耳机 Pro",
+          "price": "125.00",
+          "num": 100,
+          "created": "2026-09-01 10:00:00",
+          "modified": "2026-09-20 12:30:00",
+          "nick": "优品数码旗舰店",
+          "pic_url": "https://img.alicdn.com/imgextra/earbuds-main.jpg",
+          "pics": {
+            "pic": [
+              { "url": "https://img.alicdn.com/imgextra/earbuds-main.jpg" }
+            ]
+          },
+          "skus": {
+            "sku": [
+              {
+                "sku_id": 900001,
+                "price": "125.00",
+                "quantity": 25,
+                "properties_name": "颜色:白色",
+                "outer_id": "EARBUD-WHITE"
+              },
+              {
+                "sku_id": 900002,
+                "price": "129.00",
+                "quantity": 30,
+                "properties_name": "颜色:黑色",
+                "outer_id": "EARBUD-BLACK"
+              }
+            ]
+          }
+        },
+        {
+          "num_iid": 520000000002,
+          "title": "纯棉短袖 T 恤",
+          "price": "59.90",
+          "num": 50,
+          "created": "2026-08-15 09:00:00",
+          "modified": "2026-09-21 08:00:00",
+          "nick": "优品数码旗舰店",
+          "pic_url": "https://img.alicdn.com/imgextra/tshirt-main.jpg"
+        }
+      ]
+    }
+  }
+}

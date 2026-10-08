@@ -1,0 +1,69 @@
+{
+  "trades_sold_get_response": {
+    "total_results": 2,
+    "trades": {
+      "trade": [
+        {
+          "tid": "380000000000123456",
+          "status": "WAIT_SELLER_SEND_GOODS",
+          "created": "2026-10-01 12:12:12",
+          "pay_time": "2026-10-01 12:20:00",
+          "end_time": "",
+          "buyer_nick": "buyer_john",
+          "payment": "250.00",
+          "post_fee": "0.00",
+          "receiver_name": "张**",
+          "receiver_state": "广东省",
+          "receiver_city": "东莞市",
+          "receiver_district": "南城区",
+          "receiver_address": "xx 路 100 号",
+          "receiver_mobile": "138****0000",
+          "orders": {
+            "order": [
+              {
+                "oid": "490000000000123456",
+                "num_iid": 520000000001,
+                "sku_id": 900001,
+                "title": "无线蓝牙耳机 Pro",
+                "num": 2,
+                "price": "125.00",
+                "payment": "250.00",
+                "outer_sku_id": "EARBUD-WHITE"
+              }
+            ]
+          }
+        },
+        {
+          "tid": "380000000000123499",
+          "status": "TRADE_FINISHED",
+          "created": "2026-09-20 10:00:00",
+          "pay_time": "2026-09-20 10:05:00",
+          "end_time": "2026-09-25 10:00:00",
+          "buyer_nick": "buyer_jane",
+          "payment": "59.90",
+          "post_fee": "6.00",
+          "receiver_name": "李**",
+          "receiver_state": "广东省",
+          "receiver_city": "深圳市",
+          "receiver_district": "南山区",
+          "receiver_address": "xx 大道 8 号",
+          "receiver_mobile": "139****1111",
+          "orders": {
+            "order": [
+              {
+                "oid": "490000000000123499",
+                "num_iid": 520000000002,
+                "sku_id": 0,
+                "title": "纯棉短袖 T 恤",
+                "num": 1,
+                "price": "59.90",
+                "payment": "59.90",
+                "outer_sku_id": "TSHIRT-01"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

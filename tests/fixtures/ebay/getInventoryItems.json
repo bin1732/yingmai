@@ -1,0 +1,39 @@
+{
+  "href": "https://api.ebay.com/sell/inventory/v1/inventory_item?limit=2&offset=0",
+  "total": 2,
+  "size": 2,
+  "inventoryItems": [
+    {
+      "sku": "EARBUD-01",
+      "product": {
+        "title": "Wireless Earbuds Pro",
+        "description": "True wireless bluetooth earbuds.",
+        "images": {
+          "images": [
+            { "imageUrl": "https://i.ebayimg.com/images/g/aaa/s-l1600.jpg" }
+          ]
+        }
+      },
+      "availability": {
+        "shipToLocationAvailability": { "quantity": 25 }
+      },
+      "locale": "en_US"
+    },
+    {
+      "sku": "TSHIRT-M-RED",
+      "inventoryItemGroupKeys": ["TSHIRT-GROUP-01"],
+      "product": {
+        "title": "Cotton Crew T-Shirt",
+        "images": {
+          "images": [
+            { "imageUrl": "https://i.ebayimg.com/images/g/bbb/s-l1600.jpg" }
+          ]
+        }
+      },
+      "availability": {
+        "shipToLocationAvailability": { "quantity": 10 }
+      },
+      "locale": "en_US"
+    }
+  ]
+}
